@@ -1,0 +1,78 @@
+.wrap{
+    background-image: url(/img/background-b.png);
+}
+
+.contain{
+    width: 1200px;
+    margin: 0 auto;    
+    height: 600px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 250px;
+}
+
+.tex{
+    background-color: rgba(254, 248, 239, 0.5);
+    text-align: center;
+    color: #FEF8EF;
+    text-shadow:3px 6px 6px #7b6363;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    margin-top: 350px;
+}
+
+.es_ch_title{
+    font-size: 23px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.es{
+    background-image: url(/img/ess0.jpeg);
+    flex: 1 0 ;
+}
+
+.bs{
+    background-image: url(/img/bs0.png);
+    flex: 1 0 ;
+    position: relative;
+}
+
+.sc{
+    flex: 1 0 ;    
+}
+
+.contain :not(:last-child) :after{
+    content: " ";
+	background-color:rgba(254, 248, 239, 0.2);
+	width: 15px; 
+	height: 600px;
+	position: absolute;
+    top: 0;
+	right: -15px;
+}
+
+.contain :not(:first-child) :before{
+    content: " ";
+	background-color:rgba(254, 248, 239, 0.2);
+	width: 15px; 
+	height: 600px;
+	position: absolute;
+    top: 0;
+	left: 0px;
+}
+
+.sc{
+    background-image: url(/img/sc0.png);
+       flex-grow: 1;
+}
+
+a{
+    transition:.5s;
+}
+
+a:hover{
+    transition: 3s;
+    filter: grayscale(0);
+    flex-grow: 20;
+}

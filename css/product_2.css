@@ -1,0 +1,285 @@
+
+
+/* header */
+.header{
+    background-image: url(/img/ess0.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 425px;
+    padding-top: 250px;
+}
+
+.header div{
+    background-color: rgba(254, 248, 239, 0.8);
+    text-align: right;
+    padding: 100px 50px 80px 100px;
+    margin-left: 50%;
+    margin-right: 20%;
+    width: 400px;
+}
+
+.header .sub_title{
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+/* quote */
+
+.quote p{
+    text-align: center;
+    background-image: url(/img/background-quote.png);
+    padding-top: 60px;
+    padding-bottom:60px;
+    font-size: 16px;
+    letter-spacing:3px;
+	line-height: 38px;
+}
+
+/* items */
+
+.main{
+    /* 背景圖、logo定位 */
+    margin: 0 auto;
+}
+
+.item{
+    display: grid;
+    /* grid-template-rows: 80px repeat(6, 405px); */
+    grid-template-rows: 80px repeat(6, 280px);
+    /* grid-template-columns: repeat(3, 370px); */
+    grid-template-columns: repeat(3, 255px);
+    /* grid-gap: 70px 44px; */
+    grid-gap: 70px 53px;
+    /* margin-left: 30%; */
+    margin: 0 auto;
+    /* display: block; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* place-items: center; */
+    justify-self: center;
+}
+
+.item .item_menu{
+    line-height: 80px;
+    background-color: #fef8ef;
+    font-size: 20px;
+    height: 80px;
+    display: flex;
+    align-content: center;
+}
+
+
+.item .m_es{
+    background-color: #927A74;
+    color: #fef8ef;
+    font-weight: bold;
+}
+
+.item_menu img{
+    height: 60px;
+    display: inline-block;
+    margin-left: 100px;
+/* margin: 0 auto; */
+}
+
+.m_bs img{
+    margin-top: 10px;   
+}
+
+.m_sc img{
+    margin-top: 10px;   
+}
+
+.item_menu h3{
+    display: inline-block;
+    /* margin: 0 auto; */
+    margin-left: 20px;  
+}
+
+.item_menu .es{
+    grid-area: 1/ 1/ 1/ 1;
+    color: #fef8ef;
+}
+
+.item_menu .bs{
+    grid-area: 1/ 2/ 1/ 2;
+}
+
+
+.item_menu .sc{
+    grid-area: 1/ 3/ 1/ 3;    
+}
+
+
+.item a{
+    /* width: 370px; */
+    width: 255px;
+    /* height: 405px; */
+    height: 280px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 10px 10px 15px #E2CDAE;
+    position: relative;
+}
+
+.it_sin{
+    background-image: url(/img/bottle.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    /* background-size: contain; */
+}
+
+.item a:hover{
+    /* border: 3px solid #E2CDAE; */
+}
+
+.item a h1{
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+}
+
+.item a p{
+    position: absolute;
+    bottom: 23px;
+    left:95px;
+    font-family: Arial;
+}
+
+.item .sp_it{
+    /* width: 772px; */
+    width: 563px;
+}
+
+.item .sp_mt{
+    /* width: 772px; */
+    width: 563px;
+    height: 882px;
+}
+
+.it_sin img{
+    opacity: 0;
+}
+
+.it_sin img:hover{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.e1_1{
+    grid-area: 2/ 1/ 2/ 1;
+}
+
+.e1_2{
+    grid-area: 2/ 2/ 2/ 2;
+}
+
+.e1_3{
+    grid-area: 2/ 3/ 2/ 3;
+}
+
+.e2_1{
+    grid-area: 3/ 1/ 3/ 1;
+}
+
+.e2_2{
+    grid-area: 3/ 2/ 3/ 3;
+    background-image: url(/img/breeze_s.png);
+    background-repeat: no-repeat;
+    background-position: 213px 35px;
+}
+
+.item .e2_2 h1{
+    position: absolute;
+    left: 55px;
+    top: 85px;
+}
+
+.e3_1{
+    grid-area: 4/ 1/ 5/ 2;
+    background-image: url(/img/plant3.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 0px 0px;
+}
+
+.e3_1 .p1{
+    top: 115px;
+    right:-383px;   
+}
+
+.e3_1 .p2{
+    top: 300px;
+    right:-390px;  
+}
+
+.e3_1 .p3{
+    bottom: 322px;
+    right:-383px; 
+}
+
+.e3_1 .p4{
+    bottom: 118px;
+    right:-400px;     
+}
+
+.e3_3{
+    grid-area: 4/ 3/ 4/ 3;
+}
+
+.e4_3{
+    grid-area: 5/ 3/ 5/ 3;
+}
+
+.e5_1{
+    grid-area: 6/ 1/ 6/ 1;
+}
+
+.e5_2{
+    grid-area: 6/ 2/ 6/ 2;
+}
+
+.e5_3{
+    grid-area: 6/ 3/ 6/ 3;
+}
+
+.e6_1{
+    grid-area: 7/ 1/ 7/ 2;
+    background-image: url(/img/midnight_s.png);
+    background-size: 534px;
+    background-repeat: no-repeat;
+    background-position: 55px 55px;
+}
+
+.item .e6_1 .summer{
+    position: absolute;
+    left: 270px;
+    top: 75px;    
+    color: #FEF8EF;
+}
+
+.item .e6_1 .dream{
+    position: absolute;
+    left: 600px;
+    top: 125px;
+    color: #7B6363;    
+}
+
+.e6_3{
+    grid-area: 7/ 3/ 7/ 3;
+}
+
+.e7_1{
+    grid-area: 8/ 1/ 8/1;
+}
+
+.e7_2{
+    grid-area: 8/ 2/ 8/ 2;
+}
+
+.e7_3{
+    grid-area: 8/ 3/ 8/ 3;
+}

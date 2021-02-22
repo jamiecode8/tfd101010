@@ -1,0 +1,204 @@
+.wrap{
+	font-family: Noto Sans TC;
+	color: #7B6363;
+    position: relative;
+} 
+
+.wrap .contain{
+    background-image: url(/img/background-b.png);
+    /* display: flex; */
+    height: 1500px;
+    margin-bottom: 0;
+}
+
+.top{
+    /* height: 1000px; */
+    height: 850px;
+    display: inline-flex;
+}
+
+.left{
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-height: 800px;
+}
+
+
+/* main介紹區塊 */
+.main{
+    text-align: left;
+    width: 33%;
+    display: inline-block;
+    padding-top: 5%;
+    position: absolute;
+    left: 60%;
+}
+.main .title{
+    /* font-size: 35px; */
+    font-weight: bold;
+    font-family: rage;
+    font-size: 55px;
+    padding-bottom:30px ;
+    margin-left: -10%;
+}
+
+.tex{
+    width: 100%;
+    position: relative;
+}
+
+/* 那條線 */
+
+.tex h2:before{
+	content: " ";
+	background-color: #7B6363;
+	width: 2px; 
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -5%;
+	display: inline-block;
+  }
+
+
+.main .item_sub{
+    font-size: 20px;
+    padding-bottom:20px ;
+}
+
+.main .item_sub2{
+    font-size: 16px;
+    padding-bottom:10px ;
+}
+
+.article{
+    /* display: inline-block; */
+    /* padding-top: 20px; */
+    padding: auto;
+    font-size: 14px;
+    line-height: 1.8;
+    padding-bottom:20px ;
+    display: block;
+}
+
+.main .vol{
+    display: inline-block;
+    font-family: Varela Round;
+    font-size: 12px;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 5px 10px 15px #E2CDAE;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.main .vol:hover{
+        background-color: #E2CDAE;
+        color: #FEF8EF;
+        font-weight: bold;
+        text-shadow: 0.1em 0.1em #A0BD90;
+}
+
+
+/* 建議搭配區塊 */
+.sug{
+    font-size: 20px;  
+    font-weight: bold;
+    margin-bottom: 60px;
+
+
+}
+
+.bottom ul{
+    display: flex;
+    width: 1200px; 
+    overflow: hidden;
+    height: 360px;
+}
+
+.bottom ul a{
+    width: 280px;
+    height: 333px;
+    border-radius: 5%;
+    display: inline-block;
+    background-color:  rgba(254, 248, 239, 0.7);
+    position: relative;
+    flex-grow: 1;
+    -webkit-box-shadow: 5px 10px 15px #E2CDAE;
+    margin: 0 30px;
+}
+
+.bottom h3{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.bottom{
+    width: 1200px;
+    margin: 0 auto;
+    /* padding-bottom: 100px; */
+    /* display: block; */
+    height: 500px;
+}
+
+/* breadcrumb */
+.breadcrumb{
+    position: absolute;
+    right: 10%;    
+    top: 0px;
+    padding: 5px 10px;
+    display: block;
+    width: 500px;
+    text-align: right;
+}
+
+.breadcrumb .breadcrumb_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumb .breadcrumb_list > li{
+    display: inline-block;
+    margin-right: 10px;
+    color:#6DAC42;
+    font-size: 14px;
+}
+  
+  
+  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
+.breadcrumb .breadcrumb_list > li::before{
+    content: "/";
+    font-size: 18px;
+    color: #C0A995;
+    margin-right: 12px;
+}
+
+/* 第一個 li 元素，將 ::before 設定回來需要的 */
+div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+    content: "";
+    margin-right: 0;
+}
+  
+  
+/* 基本文字樣式 */
+div.breadcrumb ol.breadcrumb_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #C0A995;
+}
+  
+/* 滑動移過後改變文字顏色 */
+div.breadcrumb ol.breadcrumb_list > li > a:hover{
+    color: #7B6363;
+}

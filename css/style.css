@@ -1,0 +1,209 @@
+@import url('reset.css');
+
+html, body {
+    height: 100%;
+}
+
+.wrap{
+	font-family: rage, Noto Sans TC;
+	color: #7B6363;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	min-height: 100%;
+}
+
+.mid{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.title{
+	font-size: 55px;
+}
+
+.sub_title{
+	font-size: 26px;
+	color: #927A74;
+}
+
+.wrap a{
+	text-decoration: none;
+	font-family: rage, Noto Sans TC;
+	color: #7B6363;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.wrap p{
+	font-size: 14px;
+	letter-spacing:2px;
+	line-height: 1.8;
+}
+
+.wrap .contain{
+	padding-bottom: 250px;
+	/* margin-bottom: 250px; */
+}
+
+.wrap img{
+	max-width: 100%;
+}
+
+.more_bt{
+	width: 85px;
+}
+
+.more_ri{
+	width: 125px;
+}
+
+.logo_b{
+	height: 150px;
+}
+
+.wrap .img_r{
+	border-radius: 5%;
+}
+/* nav */
+.menu{
+    background-image: url(/img/background-menu.png);
+    position: relative;
+    height: 80px;
+    display: flex;
+    font-size: 14px;
+		transition: top .4s ease-in-out;
+
+}
+
+.menu_tex{
+    display: flex;
+    position: absolute;
+    left: 60%;
+	padding-top: 20px;
+}
+
+.menu_tex a{
+    line-height: 70px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+	padding-left: 30px;
+	text-align: right;
+}
+
+.menu_icon{
+	display: flex;
+    padding-top: 30px;  
+    position: absolute;
+    right: 0px; 
+}
+
+.menu_icon .btn_m{
+	width: 30px;
+	height: 30px;
+  background-image: url(/img/icon_menu.png);
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+.m7{
+    background-position: 0 -30px;
+    margin-left: 30px;
+}
+.menu_icon .m6:hover{ background-position: -30px 0;}
+.menu_icon .m7:hover{ background-position: -30px -30px;}
+
+.stickymenu{
+	position: sticky;
+	top: 0;
+}
+
+/*footer*/
+
+.wrap .foot{
+	height: 85px;
+	background-color: #C0A995;
+	display: block;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	position: absolute;
+  bottom: 0px;
+	width: 100%;
+} 
+
+.foot .inner{
+	display: block;
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;	
+	justify-content: space-between;	
+}
+
+
+.foot .btn{
+	width: 45px;
+	height: 47px;
+	background-image: url(/img/icon_med.png);
+	float: left;
+	background-repeat: no-repeat;
+	margin: 10px 8px 10px;
+}
+
+.foot p{
+	font-size: 3px;
+	letter-spacing:1px;
+	line-height: 30px;
+	color:#FEF8EF;
+	font-family: Arial;
+	padding-left: 50px;
+}
+
+.foot .footlogo{
+	margin-right: 0;
+}
+
+.footlogo img{
+	width: 250px;
+}
+
+.foot .pi{ background-position: 0 -45px;}
+.foot .yt{ background-position: 0 -90px;}
+.foot .fb{ background-position: 0 -135px;}
+
+.foot .ig:hover{ background-position: -45px 0;}
+.foot .pi:hover{ background-position: -45px -45px;}
+.foot .yt:hover{ background-position: -45px -90px;}
+.foot .fb:hover{ background-position: -45px -135px;}
+
+
+/* logo */
+
+.logo_fix{
+	position: fixed;
+	left: 10%;
+	bottom: 10%;
+}
+
+.logo_fix img{
+	width: 100px;
+}
+
+/* breadcrumb */
+
+.thispage{
+	/* height: 80px; */
+	position: relative;
+}
+
+.wrap .thispage .hoverleaf{
+	display: inline-block;
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	width: 80%;
+}
+
+.wrap .thispage .btn_t{
+	display: inline-block;
+	margin-top: -10px;
+}

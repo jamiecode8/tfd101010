@@ -1,0 +1,226 @@
+.wrap .contain{
+	font-family: Noto Sans TC;
+	color: #7B6363;
+    font-size: 16px;
+    background-image: url(/img/background-b.png);
+    padding-bottom: 250px;
+    margin-bottom: 0;
+} 
+
+.contain{
+    /* background-image: url(/img/background-b.png); */
+}
+
+/* main介紹區塊 */
+.main{
+    display: grid;
+    grid-template-rows:  repeat(8, 35px);
+    grid-template-columns: repeat(8, 125px);
+    grid-gap: 20px 30px;
+    padding-top: 70px;
+    text-align: left;
+	line-height: 1.5;
+    height: 365px;
+    position: relative;
+}
+
+.item_name{
+    font-size: 35px;
+    font-weight: bold;
+    grid-area: 2/ 1/ 2/ 1;
+}
+
+.origin{
+    font-size: 20px;
+    grid-area: 2/ 2/ 2/ 2;
+    padding-top: 15px;
+}
+
+.item_sub{
+    grid-area: 3/ 1/ 3/ 4;
+}
+
+.wrap .vol{
+    font-family: Varela Round;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 5px 10px 15px #E2CDAE;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+.main .vol:hover{
+    background-color: #E2CDAE;
+    color: #FEF8EF;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em #A0BD90;
+}
+
+.v5g{ grid-area: 5/ 1/ 5/ 1;}
+
+.v15g{ grid-area: 5/ 2/ 5/ 2;}
+
+.v50g{ grid-area: 5/ 3/ 5/ 3;}
+
+.bottle{
+    height: 400px;
+    grid-area: 2/ 4/ 8/ 6;
+    z-index: 1;
+}
+
+.article{
+    width: 400px;  
+    font-size: 14px;
+    line-height: 1.8;
+
+}
+
+.article1{ 
+    grid-area: 2/ 6/ 3/ 8;}
+
+.article2{ grid-area: 5/ 6/ 7/ 8;}
+
+
+/* 植物照片區塊 */
+
+.middie{
+    height: 254px; 
+    /* 跟著照片的高度 */
+    position: relative;
+    overflow: hidden;
+}
+
+.organic_area{
+    display: flex;
+    width: 1200px; 
+    margin: 0 auto;
+}
+
+.organic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color:  rgba(254, 248, 239, 0.7);
+    position: relative;
+    flex-grow: 1;
+    margin: 0 7.5%;
+    margin-top: 5%; 
+    z-index: 2;
+}
+
+.middie img{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    display: block;
+}
+
+.og3 img{
+    top:15px;
+    left: 0px;  
+}
+
+.og4 img{
+    top:4px;
+    left: 3px;  
+}
+
+/* 建議搭配區塊 */
+.sug{
+    display: block;
+    font-size: 20px;  
+    font-weight: bold;
+    margin: 50px auto;
+
+}
+
+.bottom ul{
+    display: flex;
+    width: 1200px; 
+    overflow: hidden;
+    height: 360px;
+}
+
+.bottom ul a{
+    width: 280px;
+    height: 333px;
+    border-radius: 5%;
+    display: inline-block;
+    background-color:  rgba(254, 248, 239, 0.7);
+    position: relative;
+    flex-grow: 1;
+    -webkit-box-shadow: 5px 10px 15px #E2CDAE;
+    margin: 0 30px;
+}
+
+.bottom h3{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.bottom{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+
+/* breadcrumb */
+.breadcrumb{
+    position: absolute;
+    right: 15px;    
+    top: 70px;
+    padding: 5px 10px;
+    display: block;
+    width: 500px;
+    text-align: right;
+}
+
+.breadcrumb .breadcrumb_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumb .breadcrumb_list > li{
+    display: inline-block;
+    margin-right: 10px;
+    color:#6DAC42;
+    font-size: 14px;
+}
+  
+  
+  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
+.breadcrumb .breadcrumb_list > li::before{
+    content: "/";
+    font-size: 18px;
+    color: #C0A995;
+    margin-right: 12px;
+}
+
+/* 第一個 li 元素，將 ::before 設定回來需要的 */
+div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+    content: "";
+    margin-right: 0;
+}
+  
+  
+/* 基本文字樣式 */
+div.breadcrumb ol.breadcrumb_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #C0A995;
+}
+  
+/* 滑動移過後改變文字顏色 */
+div.breadcrumb ol.breadcrumb_list > li > a:hover{
+    color: #7B6363;
+}
+  
+  

@@ -1,0 +1,192 @@
+.title3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quote .crs_tex{
+    font-size: 16px;
+    padding-bottom:60px;
+    font-family: 'Varela Round', sans-serif, Noto Sans TC;
+}
+
+/* header */
+.header{
+    background-image: url(../img/diy_main.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    height: 775px;
+}
+
+
+
+/* quote */
+
+.quote{
+    text-align: center;
+    background-image: url(/img/background-quote.png);
+    padding-top: 30px;
+    padding-bottom: 30px;
+ 
+}
+
+.quote p{
+    letter-spacing:3px;
+	line-height: 38px; 
+}
+
+.quote p:after{
+	content: " ";
+	background-color: #A0BD90;
+	width: 50px; 
+	height: 3px;
+	display: block;
+	margin: 0 auto;
+    margin-top: 30px;
+  }
+
+/* 內容區 */
+.main{
+    background-image: url(../img/background-b.png);
+    height: 2680px;
+    position: relative;
+}
+
+/* 左側選單 */
+
+.sidemenu{
+    /* display: inline-block; */
+    /* margin: block start 0; */
+    margin-left: 10%;
+    width: 300px;
+}
+
+.sidemenu_def{
+    position: relative;
+}
+
+.sidemenu_hide{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+.sidemenu_hide:hover{
+    opacity: 1;
+}
+
+.sidemenu_def a{
+    display: flex;
+    align-items: flex-start;
+}
+
+.sidemenu h3{
+    display: inline-block;
+    line-height: 55px;
+    vertical-align: top;
+}
+
+/* 中間選單 */
+.mask_submenu{
+    width: 410px;
+    height: 90px;
+    overflow: hidden;
+    margin: 0 auto;    
+}
+
+.submenu{
+    display: flex;
+    width: fit-content;
+    align-items :center;
+}
+
+.bs_area{
+    position: relative;
+    width: 110px;
+    height: 110px;
+}
+
+.bs_area > img{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+.hide{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    opacity: 0;
+}
+
+.hide img{
+    width: 110px;
+    height: 110px;
+}
+
+.hide:hover{
+    opacity: 1;
+}
+
+.submenu a{
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px; 
+    position: absolute;
+}
+
+
+.submenu .ept{
+    background-image: url(../img/drop_ept.png);
+    top:45%;
+    left:25%;
+}
+
+.submenu .half{
+    background-image: url(../img/dropt-half.png);
+    top:45%;
+    left:45%;
+}
+
+.submenu .fill{
+    background-image: url(../img/drop-fill.png);
+    top:45%;
+    left:65%;
+}
+
+
+/* 中上文字區 */
+.mask_info{
+    width: 410px;
+    height: 90px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.item_info{
+    display: flex;
+    text-align: left;
+    display: block;    
+    /* border: 1px solid blue; */
+}
+.info_area{
+    display: flex;  
+    padding: 20px;
+    /* border: 1px solid greenyellow; */
+}
+
+.item_info h3{
+    display: inline-block;
+    line-height: 50px;
+    font-weight: bold;
+    /* border: 1px solid darkorange; */
+    padding-right: 20px;
+}
+
+.item_info p{
+    padding-bottom: 10px;
+}
+
+/* 讓標題在文字左邊 */
