@@ -7,9 +7,6 @@
     margin-bottom: 0;
 } 
 
-.contain{
-    /* background-image: url(/img/background-b.png); */
-}
 
 /* main介紹區塊 */
 .main{
@@ -76,7 +73,6 @@
     width: 400px;  
     font-size: 14px;
     line-height: 1.8;
-
 }
 
 .article1{ 
@@ -146,16 +142,37 @@
     height: 360px;
 }
 
-.bottom ul a{
-    width: 280px;
-    height: 333px;
+.bottom .link{
+    width: 255px;
+    height: 300px;
     border-radius: 5%;
     display: inline-block;
     background-color:  rgba(254, 248, 239, 0.7);
     position: relative;
     flex-grow: 1;
-    -webkit-box-shadow: 5px 10px 15px #E2CDAE;
-    margin: 0 30px;
+    box-shadow: 5px 10px 15px #E2CDAE;
+    margin: 0 43px;
+    background-image: url(/img/bottle.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center;
+}
+
+.link img{
+    opacity: 0;
+    position: relative;
+    border-radius: 5%;
+}
+
+.link .more_btn{
+    /* position: absolute; */
+    top: -202px;  
+    left: 0px;
+}
+
+.link:hover img{
+    opacity: 1;
+    z-index: 1;
 }
 
 .bottom h3{
@@ -175,7 +192,7 @@
 .breadcrumb{
     position: absolute;
     right: 15px;    
-    top: 70px;
+    top: -5px;
     padding: 5px 10px;
     display: block;
     width: 500px;
@@ -195,8 +212,6 @@
     font-size: 14px;
 }
   
-  
-  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
 .breadcrumb .breadcrumb_list > li::before{
     content: "/";
     font-size: 18px;
@@ -204,21 +219,19 @@
     margin-right: 12px;
 }
 
-/* 第一個 li 元素，將 ::before 設定回來需要的 */
 div.breadcrumb ol.breadcrumb_list > li:first-child::before{
     content: "";
     margin-right: 0;
 }
   
   
-/* 基本文字樣式 */
 div.breadcrumb ol.breadcrumb_list > li > a{
     text-decoration: none;
     display: inline-block;
     color: #C0A995;
 }
   
-/* 滑動移過後改變文字顏色 */
+
 div.breadcrumb ol.breadcrumb_list > li > a:hover{
     color: #7B6363;
 }

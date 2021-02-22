@@ -68,19 +68,20 @@ html, body {
 /* nav */
 .menu{
     background-image: url(/img/background-menu.png);
-    position: relative;
     height: 80px;
-    display: flex;
     font-size: 14px;
 		transition: top .4s ease-in-out;
+}
 
+.menubox{    
+	position: relative;
 }
 
 .menu_tex{
     display: flex;
     position: absolute;
-    left: 60%;
-	padding-top: 20px;
+		padding-top: 20px;
+		right:20px;
 }
 
 .menu_tex a{
