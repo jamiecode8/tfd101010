@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  
+  <style>
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-family: 'Akaya Telivigala', cursive;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+
+    }
+  </style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide" style="background-image:url(./tfd101010/img/forever_m.png)">dfgdfgf</div>
+
+      <div class="swiper-slide" style="background-image:url(./images/nature-2.jpg)"><a href="./tfd101010/html/rose.html">哈囉你好</a></div>
+
+      <div class="swiper-slide" style="background-image:url(./images/nature-3.jpg)"><a href="./makao.html" targrt="_blank" class="link link1">
+        <h3>甜橙</h3>
+        <img src="../img/orange.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">    
+        </a></div>
+
+      <div class="swiper-slide" style="background-image:url(./images/nature-4.jpg)"> <a href="" targrt="_blank" class="link link2">
+                        <h3>佛手柑</h3>   
+                        <img src="../img/bergamot.png" alt="">
+                        <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+                        </a></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-6.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-7.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-8.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-9.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-10.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+</body>
+</html>

@@ -125,6 +125,12 @@
     top: 5px;
 }
 
+.leaf_rt{
+    position: absolute;
+    left: -140px;
+    top: 5px;
+}
+
 .crs2{
     position: absolute;
     left: 720px;

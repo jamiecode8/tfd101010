@@ -189,8 +189,7 @@
 	background-image: url(../img/pic3_1.png);	
 	flex-grow: 1;
 	width: 50%;
-	/* height: 100%; */
-	/* flex-shrink: 0; */
+	background-size: cover;
 	flex-basis: 50%;
 }
 
@@ -349,7 +348,6 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin: 0 auto;
-	font-family: Noto Sans TC;
-	font-family: Varela Round;
+	font-family: Noto Sans TC, Varela Round;
 }
 

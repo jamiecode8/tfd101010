@@ -73,6 +73,7 @@
     height: 80px;
     display: flex;
     align-content: center;
+    outline: none;
 }
 
 .item .m_thispage{
@@ -120,6 +121,15 @@
     position: relative;
 }
 
+.sp_it{
+    border: 2px solid transparent;  
+}
+
+.sp_it:hover{
+    border: 2px solid #E2CDAE;
+}
+
+/* 精油的背景瓶子 */
 .it_sin{
     background-image: url(/img/bottle.png);
     background-repeat: no-repeat;
@@ -127,11 +137,40 @@
     background-position: center;
 }
 
+/* 香氛頁背景 */
+.sc_bg_l{
+    background-image: url(/img/sc_m_l.png);
+    background-size: auto;
+}
+
+.sc_bg_m{
+    background-image: url(/img/sc_m_m.png);
+    background-size: auto; 
+}
+.sc_bg_r{
+    background-image: url(/img/sc_m_r.png);
+    background-size: auto;
+}
+
+/* 基底油的背景瓶子 */
+.bsoil{
+    background-image: url(/img/baseoil_m.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+
+.it_sin img{
+    transition:opacity .3s ease;
+    display:block; 
+}
+
 .it_sin:hover img{
     opacity: 1;
     z-index: 1;
+    transition: opacity .6s ease;
 }
-
 
 .item a h1{
     position: absolute;
@@ -161,9 +200,9 @@
 }
 
 .it_sin .more_btn{
-    /* position: absolute; */
-    top: -202px;  
-    left: 0px;
+    position: absolute;
+    top: 85px;  
+    left: 90px;
 }
 
 
@@ -191,9 +230,7 @@
     background-position: 186px 22px;
 }
 
-.sp_it:hover{
-    border: 2px solid #E2CDAE;
-}
+
 
 .item .e2_2 h1{
     position: absolute;
@@ -288,7 +325,6 @@
     grid-area: 8/ 3/ 8/ 3;
 }
 
-
 /* back tp top */
 #button {
     display: inline-block;
@@ -298,8 +334,8 @@
     text-align: center;
     border-radius: 4px;
     position: fixed;
-    bottom: 120px;
-    right: 120px;
+    bottom: 30px;
+    right: 30px;
     transition: background-color .3s, 
       opacity .5s, visibility .5s;
     opacity: 0;
@@ -308,7 +344,7 @@
   }
 
  #button::after {
-    content: "\f077";
+    content: "^";
     font-family: FontAwesome;
     line-height: 50px;
     color: #fff;
