@@ -33,7 +33,7 @@
 }
 
 .bs{
-    background-image: url(/..img/bs0.png);
+    background-image: url(../img/bs0.png);
     flex: 1 0 ;
     position: relative;
 }
