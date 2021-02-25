@@ -1,6 +1,6 @@
 /*header*/
 .nav{
-	background-image: url(/img/background-menu_def.png);
+	background-image: url(../img/background-menu_def.png);
 }
 
 .mid{
@@ -70,7 +70,7 @@
 .head{
 	position: relative;	
 	height: 810px;
-	background-image: url(/img/background_landing.png);
+	background-image: url(../img/background_landing.png);
 }
 
 .head p{
@@ -153,7 +153,7 @@
 
 /*quote*/
 .quote{
-	background-image: url(/img/background-quote.png);
+	background-image: url(../img/background-quote.png);
 }
 
 .quote_main{
@@ -163,7 +163,7 @@
 
 .quote_main h2{
 	flex-grow:1;
-	background-image: url(/img/leaf-draw-8.png);
+	background-image: url(../img/leaf-draw-8.png);
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: 50% 30%;
@@ -200,7 +200,7 @@
 
 .news_right{
 	flex-grow: 1;
-	background-image: url(/img/pic3_2.png);
+	background-image: url(../img/pic3_2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 50%;
@@ -262,7 +262,7 @@
   
 /*arrival*/
 .arr{
-	background-image: url(/img/pic4.png);
+	background-image: url(../img/pic4.png);
 	background-size:cover;
 	background-repeat: no-repeat;
 	padding-top: 200px;
@@ -313,7 +313,7 @@
 
 
 .arr_ri{
-	background-image: url(/img/pic4-2.png);
+	background-image: url(../img/pic4-2.png);
 	padding: 105px 97px 70px;
 }
 
@@ -322,7 +322,7 @@
 }
 
 .arr_ri2{
-	background-image: url(/img/pic4-2.png);
+	background-image: url(../img/pic4-2.png);
 	padding: 60px 56px;
 }
 

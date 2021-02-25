@@ -1,5 +1,5 @@
 .wrap{
-    background-image: url(/img/background-b.png);
+    background-image: url(../img/background-b.png);
 }
 
 .contain{
@@ -28,12 +28,12 @@
 }
 
 .es{
-    background-image: url(/img/ess0.jpeg);
+    background-image: url(../img/ess0.jpeg);
     flex: 1 0 ;
 }
 
 .bs{
-    background-image: url(/img/bs0.png);
+    background-image: url(/..img/bs0.png);
     flex: 1 0 ;
     position: relative;
 }
@@ -63,7 +63,7 @@
 }
 
 .sc{
-    background-image: url(/img/sc0.png);
+    background-image: url(../img/sc0.png);
        flex-grow: 1;
 }
 

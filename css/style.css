@@ -65,7 +65,7 @@ html, body {
 
 /* nav */
 .menu{
-  background-image: url(/img/background-menu_def.png);
+  background-image: url(../img/background-menu_def.png);
   height: 80px;
   font-size: 14px;
 	transition: top .4s ease-in-out;
@@ -89,6 +89,11 @@ html, body {
 	padding-left: 30px;
 	text-align: right;
 }
+
+.menu_tex a:hover{
+	color: #A0BD90;
+}
+
 
 /* 下拉時menu滑出 */
 /* 
@@ -149,7 +154,7 @@ html, body {
 .foot .btn{
 	width: 45px;
 	height: 47px;
-	background-image: url(/img/icon_med.png);
+	background-image: url(../img/icon_med.png);
 	float: left;
 	background-repeat: no-repeat;
 	margin: 10px 8px 10px;

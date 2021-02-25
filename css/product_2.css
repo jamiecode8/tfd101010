@@ -2,7 +2,7 @@
 
 /* header */
 .header{
-    background-image: url(/img/ess0.png);
+    background-image: url(../img/ess0.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-size: 100%; */
@@ -41,7 +41,7 @@
 
 .quote p{
     text-align: center;
-    background-image: url(/img/background-quote.png);
+    background-image: url(../img/background-quote.png);
     padding-top: 60px;
     padding-bottom:60px;
     font-size: 16px;
@@ -131,7 +131,7 @@
 
 /* 精油的背景瓶子 */
 .it_sin{
-    background-image: url(/img/bottle.png);
+    background-image: url(../img/bottle.png);
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: center;
@@ -139,22 +139,22 @@
 
 /* 香氛頁背景 */
 .sc_bg_l{
-    background-image: url(/img/sc_m_l.png);
+    background-image: url(../img/sc_m_l.png);
     background-size: auto;
 }
 
 .sc_bg_m{
-    background-image: url(/img/sc_m_m.png);
+    background-image: url(../img/sc_m_m.png);
     background-size: auto; 
 }
 .sc_bg_r{
-    background-image: url(/img/sc_m_r.png);
+    background-image: url(../img/sc_m_r.png);
     background-size: auto;
 }
 
 /* 基底油的背景瓶子 */
 .bsoil{
-    background-image: url(/img/baseoil_m.png);
+    background-image: url(../img/baseoil_m.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -224,7 +224,7 @@
 
 .e2_2{
     grid-area: 3/ 2/ 3/ 3;
-    background-image: url(/img/breeze_s.png);
+    background-image: url(../img/breeze_s.png);
     background-size: 63%;
     background-repeat: no-repeat;
     background-position: 186px 22px;
@@ -240,7 +240,7 @@
 
 .e3_1{
     grid-area: 4/ 1/ 5/ 2;
-    background-image: url(/img/plant3.png);
+    background-image: url(../img/plant3.png);
     background-size: 95%;
     background-repeat: no-repeat;
     position: absolute;
@@ -289,7 +289,7 @@
 
 .e6_1{
     grid-area: 7/ 1/ 7/ 2;
-    background-image: url(/img/midnight_s.png);
+    background-image: url(../img/midnight_s.png);
     background-size: 73%;
     background-repeat: no-repeat;
     background-position: 23px 23px;

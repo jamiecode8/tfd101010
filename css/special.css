@@ -5,7 +5,7 @@
 } 
 
 .wrap .contain{
-    background-image: url(/img/background-b.png);
+    background-image: url(../img/background-b.png);
     /* display: flex; */
     height: 1500px;
     margin-bottom: 0;
@@ -99,7 +99,7 @@
     line-height: 50px;
     border-radius: 5px;
     box-sizing: border-box;
-    -webkit-box-shadow: 5px 10px 15px #E2CDAE;
+    box-shadow: 5px 10px 15px #E2CDAE;
     font-size: 16px;
     text-align: center;
     margin-top: 50px;
@@ -138,7 +138,7 @@
     background-color:  rgba(254, 248, 239, 0.7);
     position: relative;
     flex-grow: 1;
-    -webkit-box-shadow: 5px 10px 15px #E2CDAE;
+    box-shadow: 5px 10px 15px #E2CDAE;
     margin: 0 30px;
 }
 
