@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 導入動畫套件  gsap 2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+  <!-- 導入  jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../vender/splide/splide.min.css">
+
+
+ <link rel="stylesheet" href="../css/style.css">
+<style>
+
+/* .splide{
+  width: 350px;
+  margin: 0 auto;
+}
+
+.splide__track{
+  width: 70%;
+  margin: 0px auto;
+} */
+
+/* 點點選單 */
+/* .splide__pagination{
+left: -200px;
+bottom: -12em;
+width: 165%;
+}
+
+.splide__pagination li{
+  margin: 0 50px ;
+}
+
+.splide__pagination__page{
+width: 30px;
+height: 30px;
+}
+
+.top_block, .mid_block, .bottom_block{
+	width: 100%;
+	max-width: 1200px;
+} */
+
+/* .mid_block, .bottom_block{
+	background-color: rgba(255, 255, 255, .8);
+	background-color: #FFFFFF ;
+	background-image: url(../img/background-quote.png); 
+	background-blend-mode: multiply;
+} */
+
+
+/* .inner_block{
+	display: flex;
+}
+
+.left_area{	
+	width: 50%;
+	display: inline-block;
+	padding: 5% 0 5% 10%;
+}
+
+.title{
+	text-align: left;
+}
+
+.title h1{
+	display: inline-block;
+	text-align: left;
+	color: #A0BD90;
+}
+
+.sub_title{
+	font-size: 20px;
+	padding-left: 5%;
+	vertical-align: middle;
+}
+
+.left_area p{
+ width: 60%;
+ margin: 3% auto;
+ text-align: left;
+ position: relative;
+}
+
+.left_area p:before{
+	content: " ";
+	background-color: #A0BD90;
+	width: 1px; 
+	height: 90%;
+	position: absolute;
+	top:5%;
+	left: -70px;
+	display: block;
+}
+
+.sidemenuarea{
+	width: 60%;
+	margin: 0 auto;
+	z-index: 999;
+}
+.sidemenu{
+	display: flex;
+	margin: 0 auto;
+}
+
+.sidedot{
+	width: 50px;
+	background-image: url(../img/drip.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 10% 10%;
+	vertical-align: middle;
+	line-height: 80px;
+	flex-grow: 1;
+	cursor: pointer;
+} */
+
+/* 中間的左邊那區 */
+
+/* .right_area{
+	width: 50%;
+	display: inline-block;
+	padding: 5% 10% 5% 0%;
+} */
+
+
+/* 輪播區域 */
+/* .splide{
+	width: 350px;
+	margin: 0 auto;
+}
+  
+.splide__track{
+	width: 70%;
+	margin: 0px auto;
+} */
+
+/* 箭頭區域 */
+/* .splide__arrow{
+	background-color: transparent;
+	top: 40%;
+	border: 0.3px solid #927A74;
+  background-image: url(../img/arrow_n.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 0;
+} */
+
+/* .splide__arrow--prev{
+  background-image: url(../img/arrow_p.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 0;
+}
+
+.splide__arrow--next{
+  background-image: url(../img/arrow_n.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 0;
+}
+
+.splide__arrow--prev svg {
+  display:none ;
+}
+
+.splide__arrow--next svg {
+  display:none ;
+} */
+
+  
+/* 點點選單 */
+/* .splide__pagination{
+	left: 260%;
+  top: 40%;
+	bottom: 3em;
+	width: 165%;
+}
+
+.splide__pagination li{
+	margin: 0 10px ;
+}
+
+.splide__pagination__page{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+.splide__pagination__page{
+	background-image: url(../img/drip.png);
+	background-color: transparent;
+  background-color: grey;
+
+}
+
+.splide__pagination__page.is-active {
+	background-color: transparent;
+} */
+
+
+/* 圖文下方文字區 */
+
+/* .info_tex h3{
+	display: inline-block;
+	line-height: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.info_tex p{
+	padding: 5px 0px;
+} */
+
+/* 下方區域 */
+/* .bottom_block{
+	margin-top: 50px ;
+	padding: 20px;
+}
+
+.choice{
+	display: grid;	
+	grid-template-rows: 250px;
+	grid-template-columns: repeat(4, 200px);
+	grid-gap: 0px 40px;
+	margin: 40px auto 0px;
+	justify-self: center;
+	width: 920px;
+}
+
+.choice_item_area{
+	border: 1px solid slateblue;
+	background-color: rgba(254, 248, 239, 0.5);
+	border-radius: 50%;
+	width: 200px;
+	height: 250px;
+	clip-path: polygon(50% 2%, 85% 6%, 94% 37%, 93% 73%, 82% 90%, 61% 99%, 19% 93%, 5% 76%, 5% 35%, 10% 8%);
+}
+
+.bottom_block button{
+	background-color: transparent;
+  border: none;
+  color: #7B6363;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+	font-family: rage;
+  cursor: pointer;
+}
+
+.no:hover{
+	transform: translateY(-50px);
+}
+
+.menubar{
+  display: flex;
+  margin: 50px;
+}
+
+.menuitem{
+width: 100px;
+}
+
+
+.item{
+  position: relative;
+}
+
+.img2, .img3{
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+}
+
+body button{
+  border:1px solid hotpink;
+} */
+
+
+/*  從這開始 */
+
+/* .yours{
+  position: absolute;
+  right: -100vw;
+  max-width: 630px;
+  border:1px solid hotpink;
+  margin: auto;
+  padding: 40px 60px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.yours_main{
+  display: flex;
+}
+.yours_right, .yours_left{
+  width: 50%;
+}
+
+.yours h1{
+  text-align: center;
+}
+
+.yours_table{
+  width: 50%;
+  padding: 20% 30% 20% 15%;
+  padding-bottom: 20px;
+}
+
+.yours_item{
+  display: flex;
+  height: 35px;
+  border-bottom: 0.5px solid grey;
+  position: relative;
+}
+
+.yours_item h3{
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+}
+
+.yours_item p{
+  width: 70px;
+  vertical-align: text-bottom;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.close_yours{
+position: absolute;
+right: 15px;
+top: 15px;
+}
+
+.close_cart{
+  text-align: center;
+  margin-left: 30%;
+} */
+
+</style>
+</head>
+<body class="blur">
+
+<!-- owl測試區 -->
+<!-- <ul>
+  <li>
+      <a href="./makao.html" targrt="_blank" class="link link1">
+      <h3>甜橙</h3>
+      <img src="../img/orange.png" alt="">
+      <img src="../img/more_b_shd.png" alt="" class="more_btn">    
+      </a>
+  </li>
+  <li>
+      <a href="" targrt="_blank" class="link link2">
+      <h3>佛手柑</h3>   
+      <img src="../img/bergamot.png" alt="">
+      <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+      </a>
+  </li>
+  <li>
+      <a href="" targrt="_blank" class="link link3">
+      <h3>葡萄柚</h3> 
+      <img src="../img/grapefruit_m.png" alt="">
+      <img src="../img/more_b_shd.png" alt="" class="more_btn">       
+      </a>
+  </li>
+  <li>
+      <a href="" targrt="_blank" class="link link4">
+      <h3>花梨木</h3>   
+      <img src="../img/rosewood_m.png" alt="">
+      <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+      </a>
+  </li>
+  <li>
+      <a href="" targrt="_blank" class="link link5">
+      <h3>乳香</h3>    
+      <img src="../img/mastic_m.png" alt="">
+      <img src="../img/more_b_shd.png" alt="" class="more_btn">    
+      </a>
+  </li>
+  <li>
+      <a href="" targrt="_blank" class="link link6">
+      <h3>檀香</h3>   
+      <img src="../img/sandalwood.png" alt="">
+      <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+      </a>
+  </li>
+</ul> -->
+<div class="row">
+  <div class="owl-carousel">
+    <div class="item">
+      <a href="./makao.html" targrt="_blank" class="link link1">
+        <h3>甜橙</h3>
+        <img src="../img/orange.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">    
+        </a>
+    </div>
+    <div class="item">
+      <a href="" targrt="_blank" class="link link2">
+        <h3>佛手柑</h3>   
+        <img src="../img/bergamot.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+        </a>
+    </div>
+    <div class="item">
+      <a href="" targrt="_blank" class="link link3">
+        <h3>葡萄柚</h3> 
+        <img src="../img/grapefruit_m.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">       
+        </a>
+    </div>
+    <div class="item">
+      <a href="" targrt="_blank" class="link link4">
+        <h3>花梨木</h3>   
+        <img src="../img/rosewood_m.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+        </a>
+    </div>
+    <div class="item">
+      <a href="" targrt="_blank" class="link link5">
+        <h3>乳香</h3>    
+        <img src="../img/mastic_m.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">    
+        </a>
+    </div>
+    <div class="item">
+      <a href="" targrt="_blank" class="link link6">
+        <h3>檀香</h3>   
+        <img src="../img/sandalwood.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+        </a>
+    </div>
+  </div>
+</div>
+
+<!-- 調油完成測試區 -->
+  <!-- <div class="yours">
+    <div class="yours_inner">
+      <button type="button" class="close_yours"><i class="far fa-times-circle"></i>XX</button>
+      <h1>專屬於您的呼吸</h1>
+      <div class="yours_main">
+        <div class="yours_left">
+          <img src="../img/diy_mid.png" alt="">
+        </div>
+        <div class="yours_right">
+          <ul class="yours_table">
+            <li class="yours_item">
+              <h3>基底油</h3>
+              <p>荷荷芭油</p>
+            </li>
+            <li class="yours_item">
+              <h3>前調</h3>
+              <p>橙花</p>
+            </li>
+            <li class="yours_item">
+              <h3>中調</h3>
+              <p>絲柏</p>
+            </li>
+            <li class="yours_item">
+              <h3>後調</h3>
+              <p>雪松</p>
+            </li>
+          </ul>
+          <button type="submit" class="close_cart">
+            <img src="../img/cart.svg" alt="">
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+<!-- 以下新測試區 -->
+  <div class="inner_block" id="block1"> 
+    <!-- 做好一個後，直接複製4個 -->
+        <!-- 內容輪播區 -->
+        <div class="right_area">
+          <div class="splide">
+            <!-- 箭頭 -->
+            <div class="splide">
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <!-- Prev -->
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <!-- Next -->
+                </button>
+              </div>
+            </div>
+            <!-- 圖和文 -->
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide pia">
+                  <div class="item">
+                    <img src="../img/olive_m.png" alt="">
+                    
+                    <button type="button" id="btn_add">add</button>
+                    <div class="info_tex"> 
+                      <h3>橄欖油</h3>
+                      <p>
+                        改善乾燥、抗老、防妊娠紋、卸妝
+                      </p>
+                      <p>
+                        溫和滋潤、適用所有膚質
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="splide__slide pia">
+                  <div class="item">
+                    <img src="../img/olive_m.png" alt="">
+                    <div class="info_tex"> 
+                      <h3>荷荷芭油</h3>
+                      <p>
+                        抑制發炎症狀、預防黑斑、皺紋
+                      </p>
+                      <p>
+                        護膚、護髮、油性肌膚
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide pia">
+                  <div class="item">
+                    <img src="../img/olive_m.png" alt="">
+                    <div class="info_tex"> 
+                      <h3>酪梨油</h3>
+                      <p>
+                        黏性高、軟化角質、肌膚再生
+                      </p>
+                      <p>
+                        乾性、缺水或老化肌膚
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide pia">
+                  <div class="item">
+                    <img src="../img/olive_m.png" alt="">
+                    <div class="info_tex"> 
+                      <h3>甜杏仁油</h3>
+                      <p>
+                        抗發炎、保濕、預防妊娠紋
+                      </p>
+                      <p>
+                        溫和、嬰兒都能使用
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- <img src="../img/olive_m.png" alt="" class="img2"> -->
+            </div>
+            <img src="../img/olive_m.png" alt="" class="img2">
+          </div>
+         
+        </div>
+
+    <div class="left_area">
+      <div class="title">
+        <h1 class="no">01</h1>
+        <h1 class="sub_title">基底油</h1>
+      </div>
+      <p>基底油具備相當豐富的營養素，目的是將精油
+        中的成分，更有效地引領到人體內。基底油除了可以
+        稀釋有刺激性的精油，也提供按摩、潤滑的效果。 
+        基底油被廣泛當作精油之間的媒介，
+        但其實，大多數基底油本身就有很好的效果，
+        即使單獨使用也能發揮效用。
+      </p>
+      <div class="sidemenuarea">
+        <!-- 放類似麵包屑(先看輪播?) -->
+        <ul class="sidemenu">
+          <li class="sidedot">橄欖油</li>
+          <li class="sidedot">荷荷芭油</li>
+          <li class="sidedot">酪梨油</li>
+          <li class="sidedot">甜杏仁油</li>
+        </ul>
+      </div>
+    </div>
+    <button type="button" id="btn_no">nono</button>
+
+
+  </div>
+
+<!-- 以上新測試區 -->
+
+
+<!-- 內容輪播區 -->
+<div class="splide">
+  <!-- 箭頭 -->
+  <div class="splide">
+    <div class="splide__arrows">
+      <button class="splide__arrow splide__arrow--prev">
+        <!-- Prev -->
+      </button>
+      <button class="splide__arrow splide__arrow--next">
+        <!-- Next -->
+      </button>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="yours">
+  <div class="yours_inner">
+    <button type="button"><i class="far fa-times-circle"></i></button>
+    <h1>專屬於您的呼吸</h1>
+    <div class="yours_main">
+      <div class="yours_left">
+        <img src="../img/diy_mid.png" alt="">
+      </div>
+      <div class="yours_right">
+        <ul>
+          <li>
+            <h3>基底油</h3>
+            <p>荷荷芭油</p>
+          </li>
+          <li>
+            <h3>前調</h3>
+            <p>橙花</p>
+          </li>
+          <li>
+            <h3>中調</h3>
+            <p>絲柏</p>
+          </li>
+          <li>
+            <h3>後調</h3>
+            <p>雪松</p>
+          </li>
+        </ul>
+        <button type="submit">
+          購物車
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- owl -->
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  items: 3,
+  autoplay: true
+});
+});
+
+</script>
+
+
+
+<!-- diy頁的輪播圖 -->
+<!-- <script src="../vender/splide/splide.min.js"></script>
+
+<script>
+	new Splide( '.splide' ).mount();
+</script>
+
+<script>
+	document.addEventListener( 'DOMContentLoaded', function () {
+		new Splide( '.splide' ).mount();
+	} );
+
+  var elms = document.getElementsByClassName( 'splide' );
+for ( var i = 0, len = elms.length; i < len; i++ ) {
+	new Splide( elms[ i ] ).mount();
+}
+</script> -->
+
+<script>
+//   new Splide( '#splide', {
+// 	classes: {
+// 		arrows: 'splide__arrows your-class-arrows',
+// 		arrow : 'splide__arrow your-class-arrow',
+// 		prev  : 'splide__arrow--prev your-class-prev',
+// 		next  : 'splide__arrow--next your-class-next',
+// 	},
+// } ).mount();
+</script>
+
+<!-- <script>
+  var t1 = new TimelineMax();
+  var t2 = new TimelineMax();
+  var add = document.getElementById('btn_add');
+  var no = document.getElementById('btn_no');
+  t1.to(".img2", 3 , {
+      x: 400, 
+      y: 800, 
+      opacity: 1,
+      esse: SlowMo.ease.config(0.5, 0.1, true)
+    });
+  
+    t1.stop();
+
+    add.onclick = function(){
+    t1.play();
+    }
+
+    
+    t2.to(".img2" , .5 , {
+    opacity: 0
+    }).to(".img2" , 3 , {
+      x: -400, 
+      y: -800, 
+    });
+    t2.stop();
+    no.onclick = function(){
+    t2.play();
+    }
+
+    
+    
+</script> -->
+
+</body>
+</html>

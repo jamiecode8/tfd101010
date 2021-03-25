@@ -4,244 +4,269 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>精油</title>
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/product_2.css">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Varela+Round&display=swap" rel="stylesheet">
 
+  <!-- 漢堡選單 -->
+	<link href="../vender/hamburgers-master/dist/hamburgers.min.css" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- 網頁圖標 -->
+	<link rel="shortcut icon" href="../favicon.ico"/>
+
+  <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/product_2.css">
 </head>
 
 <body>
-    <div class="wrap">
+	<div class="wrap">
 
-    <!-- menu -->
-        <nav class="menu" id="menuSlide">
-            <div class="menubox mid">
+		<!-- menu -->
+		<header class="menu" id="navbar">
+			<nav class="menubox mid">
 
-                <ul class="menu_tex">
-                    <li><a href="../index.html#about"  class="btn_t">關於我們</a></li>
+				<!-- 回首頁連結 -->
+				<a href="../index.html" class="logo_fix">
+					<img src="../img/logo_s.png" alt="breath">
+				</a>
 
-                    <li class="thispage">
-                        <a href="./product_1.html" class="btn_t">產品介紹</a>
-                        <img src="../img/hover_leaf.png" alt="" class="hoverleaf"></li>
+				<!-- 主選單 -->
+				<ul class="menu_area" id="myLinks">
+					<li class="menu_tex">
+						<a href="../index.html#about" class="btn_t">關於我們</a></li>
 
-                    <li><a href="./diy.html" class="btn_t">專屬呼吸</a></li>
-                    <li><a href="./course.html" class="btn_t">呼吸學苑</a></li>
-                </ul>
+					<li class="menu_tex thispage product_block">
+						<a href="./product_1.html" class="btn_t">產品介紹</a>
+						<img src="../img/hover_leaf.png" alt="" class="thispageleaf">     
+						<div class="sub_nav">
+							<ul>
+								<li class="sub_nav_li">
+									<a href="./product_2.html" class="sub_nav_a">精油</a>
+								</li>
+								<li class="sub_nav_li">
+									<a href="./product_2_bs.html" class="sub_nav_a">基底油</a>
+								</li>
+								<li class="sub_nav_li">
+									<a href="./product_2_sc.html" class="sub_nav_a">香氛</a>
+								</li>
+							</ul>
+						</div>
+					</li>
 
-            </div>
+					<li class="menu_tex">
+						<a href="./diy.html" class="btn_t">專屬呼吸</a></li>
 
-            <!-- <div class="menu_icon">
-                <a class="btn_m m6" href="#"></a>	
-                <a class="btn_m m7" href="#"></a>	
-                </div> -->
-        </nav>
+					<li class="menu_tex">
+						<a href="./course.html"  class="btn_t">呼吸學苑</a>
+					</li>
 
-    <!-- header -->
-        <header class="header">
-            <div>
-                <h1 class="title">
-                    essential oil
-                </h1>
-                <h2 class="sub_title">
-                    精油~在陽光與能量之間，重現生生不息的能量
-                </h2>
-            </div>
+				</ul>
 
-        </header>
+				<!-- 漢堡選單 -->
+				<button class="hamburger hamburger--spring" type="button"  onclick="myFunction()">
+					<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</nav>
+		</header>
 
-        <div class="contain">
-    
-            <!-- quote -->
-            <div class="quote">
-                <p>
-                陽光<br>
-                擁有轉化自然恩惠、延續美好生活的能力<br>
-                這正是芳香療法的真諦<br>
-                透過呼吸，讓香氣不只是療癒身心的能量<br>
-                更是發現自我、理解他人和探索世界的最佳媒介<br>
-                獲得陽光滋養，成長綻放，最終成為具備自信及美感的個體<br>
-                </p>
-            </div>
+		<!-- Key Visual -->
+		<div class="keyvisual keyvisual_es">
+			<div class="keyvisual_bgi K_es">
+			</div>
+			<div class="mid">
+				<div class="text"  id="esoil">
+					<h1 class="title">
+						essential oil
+					</h1>
+					<h2 class="sub_title">
+						精油~在陽光與能量之間，重現生生不息的能量
+					</h2>
+				</div>
+			</div>    
+		</div>
 
-            <!-- main -->
-            <section class="mid main">
-                <div class="item">
+		<div class="contain">
+		
+			<!-- quote -->
+			<div class="quote">
+				<p>
+				陽光<br>
+				擁有轉化自然恩惠、延續美好生活的能力<br>
+				這正是芳香療法的真諦<br>
+				透過呼吸，讓香氣不只是療癒身心的能量<br>
+				更是發現自我、理解他人和探索世界的最佳媒介<br>
+				獲得陽光滋養，成長綻放，最終成為具備自信及美感體<br>
+				</p>
+			</div>
 
-                    <a href="./product_2.html#esoil" class="m_t m_es item_menu m_thispage" id="esoil">
-                    <img src="../img/leaf-draw-5.png" alt="">
-                    <h3 class="es">精油</h3>
-                    </a>
+			<!-- main -->
+			<main>
+				<section class="mid">
+					<div class="item">
 
-                    <a href="./product_2_bs.html#bsoil" class="m_bs item_menu" id="bsoil">
-                    <img src="../img/leaf-draw-7.png" alt="">
-                    <h3 class="bs">基底油</h3>
-                    </a>
+						<a href="./product_2.html#esoilclass=" class="m_t m_es item_menu m_thispage">
+							<img src="../img/draw/leaf-5.svg" alt="">
+							<h3 class="es">精油</h3>
+						</a>
 
-                    <a href="./product_2_sc.html#scent" class="m_sc item_menu" id="scent">
-                    <img src="../img/leaf-draw-6.png" alt="">
-                    <h3 class="sc">香氛</h3>
-                    </a>
+						<a href="./product_2_bs.html#bsoilclass=" class="m_bs item_menu">
+							<img src="../img/draw/leaf-7.svg" alt="">
+							<h3 class="bs">基底油</h3>
+						</a>
 
-                        <a href="./rose.html"    class="e1_1 it_sin">
-                            <h1>玫瑰</h1>
-                            <p>$200</p>
-                            <img src="../img/rose_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./product_2_sc.html#scen   class=" class="m_sc item_menu">
+							<img src="../img/draw/leaf-6.svg" alt="">
+							<h3 class="sc">香氛</h3>
+						</a>
 
-                        <a href="./ylan.html"     class="e1_2  it_sin">
-                            <h1>依蘭</h1>
-                            <p>$200</p>
-                            <img src="../img/ylan_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./rose.html"    class="e1_1 it_sin">
+							<h1>玫瑰</h1>
+							<p>$200</p>
+							<img src="../img/rose_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./lessforever.html"     class="e1_3  it_sin">
-                            <h1>永久花</h1>
-                            <p>$200</p>
-                            <img src="../img/forever_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./ylan.html"     class="e1_2  it_sin">
+							<h1>依蘭</h1>
+							<p>$200</p>
+							<img src="../img/ylan_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./rose.html"     class="e2_1  it_sin">
-                            <h1>薰衣草</h1>
-                            <p>$200</p>
-                            <img src="../img/lavender_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./lessforever.html" class="e1_3  it_sin">
+							<h1>永久花</h1>
+							<p>$200</p>
+							<img src="../img/forever_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./special_template .html"     class="e2_2 sp_it">
-                            <h1 class="title">breathe the breeze</h1>
-                        </a>
+						<a href="./rose.html" class="e2_1  it_sin">
+							<h1>薰衣草</h1>
+							<p>$200</p>
+							<img src="../img/lavender_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                    
-                        <a href="#"     class="e3_1 sp_mt sp_it">
-                            <p class="p1">
-                            獨家低溫蒸餾技術<br> 
-                            保留最佳植物能量
-                            </p>
+						<a href="./special_template .html"  class="e2_2 sp_it">
+							<h1 class="title">breathe the breeze</h1>
+						</a>
 
-                            <p class="p2">
-                                四大國際有機認證<br> 
-                                專業芳療師愛用品牌
-                            </p>
-                            
-                            <p class="p3">
-                                原裝空運新鮮來台<br> 
-                                提供最好品質保健
-                            </p>   
-                        
-                            <p class="p4">
-                                不進行殘忍動物實驗<br> 
-                                符合人道化妝品標準
-                            </p> 
+										
+						<a href="#"  class="e3_1 sp_mt sp_it">
+							<p class="p1">
+							獨家低溫蒸餾技術<br> 
+							保留最佳植物能量
+							</p>
+							<p class="p2">
+									四大國際有機認證<br> 
+									專業芳療師愛用品牌
+							</p>
+							
+							<p class="p3">
+									原裝空運新鮮來台<br> 
+									提供最好品質保健
+							</p>   
+					
+							<p class="p4">
+									不進行殘忍動物實驗<br> 
+									符合人道化妝品標準
+							</p> 
+						</a>
 
-                        </a>
+						<a href="./rose.html"     class="e3_3  it_sin">
+							<h1>馬鞭草</h1>
+							<p>$200</p>
+							<img src="../img/verbena_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./rose.html"     class="e3_3  it_sin">
-                            <h1>馬鞭草</h1>
-                            <p>$200</p>
-                            <img src="../img/verbena_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./rose.html"     class="e4_3  it_sin">
+							<h1>苦橙葉</h1>
+							<p>$200</p>
+							<img src="../img/orgleaf_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./rose.html"     class="e4_3  it_sin">
-                            <h1>苦橙葉</h1>
-                            <p>$200</p>
-                            <img src="../img/orgleaf_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./rose.html"     class="e5_1  it_sin">
+							<h1>絲柏</h1>
+							<p>$200</p>
+							<img src="../img/snow_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./rose.html"     class="e5_1  it_sin">
-                            <h1>絲柏</h1>
-                            <p>$200</p>
-                            <img src="../img/snow_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./rose.html"     class="e5_2  it_sin">
+							<h1>茶樹</h1>
+							<p>$200</p>
+							<img src="../img/tea_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./rose.html"     class="e5_2  it_sin">
-                            <h1>茶樹</h1>
-                            <p>$200</p>
-                            <img src="../img/tea_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./makao.html"     class="e5_3  it_sin">
+							<h1>山雞椒</h1>
+							<p>$200</p>
+							<img src="../img/malao_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./makao.html"     class="e5_3  it_sin">
-                            <h1>山雞椒</h1>
-                            <p>$200</p>
-                            <img src="../img/malao_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./special_template .html"     class="e6_1 sp_it">
+							<h1 class="title summer">a midsummer 
+								<br> &emsp; &emsp; night's </h1>
+							<h1 class="title dream">dream</h1>
+							<h1 class="title rwd_summer">a midsummer</h1>
+							<h1 class="title rwd_dream">night's dream</h1>
+						</a>
 
-                        <a href="./special_template .html"     class="e6_1 sp_it">
-                            <h1 class="title summer">a midsummer 
-                                <br> &emsp; &emsp; night's </h1>
-                            <h1 class="title dream">dream</h1>
-                        </a>
+						<a href="./rose.html"     class="e6_3  it_sin">
+							<h1>檸檬</h1>
+							<p>$200</p>
+							<img src="../img/lemon_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./rose.html"     class="e6_3  it_sin">
-                            <h1>檸檬</h1>
-                            <p>$200</p>
-                            <img src="../img/lemon_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./rose.html"     class="e7_1  it_sin">
+							<h1>薄荷</h1>
+							<p>$200</p>
+							<img src="../img/mint_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./rose.html"     class="e7_1  it_sin">
-                            <h1>薄荷</h1>
-                            <p>$200</p>
-                            <img src="../img/mint_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./rose.html"     class="e7_2  it_sin">
+							<h1>乳香</h1>
+							<p>$200</p>
+							<img src="../img/mastic_m.png" alt="">
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
 
-                        <a href="./rose.html"     class="e7_2  it_sin">
-                            <h1>乳香</h1>
-                            <p>$200</p>
-                            <img src="../img/mastic_m.png" alt="">
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
+						<a href="./rose.html"     class="e7_3  it_sin">
+							<h1>廣藿香</h1>
+							<p>$200</p>
+							<img src="../img/Patchouli_m.png" alt="">                        
+							<img src="../img/more_b_shd.png" alt="" class="more_btn">
+						</a>
+					</div>
+				</section>
+			</main>     
 
-                        <a href="./rose.html"     class="e7_3  it_sin">
-                            <h1>廣藿香</h1>
-                            <p>$200</p>
-                            <img src="../img/Patchouli_m.png" alt="">                        
-                            <img src="../img/more_b_shd.png" alt="" class="more_btn">
-                        </a>
-                </div>
+		</div>
 
-            </section>  
+		<!-- footer -->
+		<footer class="foot">
+			<div class="mid foot_inner">
+				<div>
+					<a class="btn ig" href="#"></a>
+					<a class="btn pi" href="#"></a>	
+					<a class="btn yt" href="#"></a>	
+					<a class="btn fb" href="#"></a>		
+					<p class="copyright">2021 All Rights Reserve</p>	
+				</div>
+				<a href="#" class="footlogo"><img src="../img/Logo-white.png" alt=""></a>
+				</div>	
+		
+		</footer>
 
-        </div>
-
-        <!-- 回首頁連結 -->
-        <a href="../index.html" class="logo_fix" id="logoFix">
-            <img src="../img/logo .png" alt="breath">
-        </a>
-       
-    
-    
-    <!-- footer -->
-    <footer class="foot">
-         <div class="mid inner">
-            <div>
-            <a class="btn ig" href="#"></a>
-            <a class="btn pi" href="#"></a>	
-            <a class="btn yt" href="#"></a>	
-            <a class="btn fb" href="#"></a>		
-            <p class="copyright">2021 All Rights Reserve</p>	
-            </div>
-    
-            <a href="#" class="footlogo"><img src="../img/Logo-white.png" alt=""></a>
-            </div>	
-    
-    </footer>
-
-    </div>    
-
-    </div>
-
-    <script src="../js/style.js"></script>
-
+	</div>    
+  <script src="../js/style.js"></script>
 </body>
 </html>   

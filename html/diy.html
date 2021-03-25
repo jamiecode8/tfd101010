@@ -4,601 +4,769 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>專屬呼吸</title>
-	<link rel="stylesheet" href="../css/style.css">
+  <!-- font awesome -->
+  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/fontawesome/css/all.css">
+	<!-- 導入動畫套件  gsap 2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <!-- 導入  jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- 漢堡選單 -->
+  <link href="../vender/hamburgers-master/dist/hamburgers.min.css" rel="stylesheet">  
+
+  <!-- 輪播 --> 
+  <link rel="stylesheet" href="../vender/splide/splide.min.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Varela+Round&display=swap" rel="stylesheet">
+  <!-- 網頁圖標 -->
+	<link rel="shortcut icon" href="../favicon.ico"/>
+
+  <link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/diy.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Varela+Round&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <div class="wrap">
+<body class="watercolor">
+  <div class="wrap">
 
     <!-- menu -->
-        <nav class="menu">
-
-            <div class="menubox mid">
-            <ul class="menu_tex">
-                <li><a href="../index.html"  class="btn_t">關於我們</a></li>
-                <li><a href="./product_1.html" class="btn_t">產品介紹</a></li>
-
-
-                <li class="thispage">
-                    <a href="./diy.html" class="btn_t">專屬呼吸</a>
-                    <img src="../img/hover_leaf.png" alt="" class="hoverleaf">  
-                </li>
-
-                <li>
-                    <a href="./course.html"  class="btn_t">呼吸學苑</a>
-                </li>
-
-            </ul>
-            </div>
-
-            <!-- <div class="menu_icon">
-                <a class="btn_m m6" href="#"></a>	
-                <a class="btn_m m7" href="#"></a>	
-                </div> -->
-
-        </nav>
-
-    <!-- header -->
-        <header class="header">
-        </header>
-
-    <!-- quote -->
-        <div class="quote">
-            <p class="crs_tex">
-            這個世界<br>存在著各式各樣獨特的香氣<br>
-            我們的任務是去發現與感受它
-            </p>
-        </div>
-
-        <!-- main -->        
-        <div class="main">
-
-             <!-- 中上文字區 -->
-            <div class="mask_info">
-
-                <div class="item_info_all">
-
-                    <ul class="item_info">
-                        <li class="info_area info1">
-                        <h3>橄欖油</h3>
-
-                        <div class="info_tex"> 
-                            <p>功效 
-                                改善乾燥、抗老、預防妊娠紋、卸妝</p>
-                            <p>適用 
-                                溫和滋潤、適用所有膚質</p>
-                        </div>
-
-                        </li>
-
-                        <li class="info_area info2">
-                            <h3>荷荷芭油</h3>
-
-                            <div class="info_tex"> 
-                                <p>功效 
-                                    抑制發炎症狀、預防黑斑、皺紋</p>
-                                <p>適用 
-                                    護膚、護髮、油性肌膚</p>
-                            </div>
-
-                        </li>
-
-                        <li class="info_area info3">
-                            <h3>酪梨油</h3>
-
-                            <div class="info_tex"> 
-                                <p>功效 
-                                    黏性高、軟化角質、肌膚再生</p>
-                                <p>適用 
-                                    乾性、缺水或老化肌膚</p>
-                            </div>
-
-                        </li>
-
-                        <li class="info_area info4">
-                            <h3>甜杏仁油</h3>
-
-                            <div class="info_tex"> 
-                            <p>功效
-                                抗發炎、保濕、預防妊娠紋</p>
-                            <p>適用
-                                溫和、嬰兒都能使用</p>
-                            </div>
-
-                        </li>
-
-                    </ul>
-
-                    <!-- 內容要改成前調 -->
-                    <ul class="item_info">
-                        <li class="info_area info1">
-                        <h3>茶樹</h3>
-
-                        <div class="info_tex"> 
-                            <p>功效 
-                                改善乾燥、抗老、預防妊娠紋、卸妝</p>
-                            <p>適用 
-                                溫和滋潤、適用所有膚質</p>
-                        </div>
-
-                        </li>
-
-                        <li class="info_area info2">
-                            <h3>橙花</h3>
-
-                            <div class="info_tex"> 
-                                <p>功效 
-                                    抑制發炎症狀、預防黑斑、皺紋</p>
-                                <p>適用 
-                                    護膚、護髮、油性肌膚</p>
-                            </div>
-
-                        </li>
-
-                        <li class="info_area info3">
-                            <h3>苦橙葉</h3>
-
-                            <div class="info_tex"> 
-                                <p>功效 
-                                    黏性高、軟化角質、肌膚再生</p>
-                                <p>適用 
-                                    乾性、缺水或老化肌膚</p>
-                            </div>
-
-                        </li>
-
-                        <li class="info_area info4">
-                            <h3>薄荷</h3>
-
-                            <div class="info_tex"> 
-                            <p>功效
-                                抗發炎、保濕、預防妊娠紋</p>
-                            <p>適用
-                                溫和、嬰兒都能使用</p>
-                            </div>
-
-                        </li>
-
-                    </ul>
-
-    
-                    <!-- 內容要改成中調 -->
-                    <ul class="item_info">
-                        <li class="info_area info1">
-                        <h3>絲柏</h3>
-
-                        <div class="info_tex"> 
-                            <p>功效 
-                                改善乾燥、抗老、預防妊娠紋、卸妝</p>
-                            <p>適用 
-                                溫和滋潤、適用所有膚質</p>
-                        </div>
-
-                        </li>
-
-                        <li class="info_area info2">
-                            <h3>永久花</h3>
-
-                            <div class="info_tex"> 
-                                <p>功效 
-                                    抑制發炎症狀、預防黑斑、皺紋</p>
-                                <p>適用 
-                                    護膚、護髮、油性肌膚</p>
-                            </div>
-
-                        </li>
-
-                        <li class="info_area info3">
-                            <h3>薰衣草</h3>
-
-                            <div class="info_tex"> 
-                                <p>功效 
-                                    黏性高、軟化角質、肌膚再生</p>
-                                <p>適用 
-                                    乾性、缺水或老化肌膚</p>
-                            </div>
-
-                        </li>
-
-                        <li class="info_area info4">
-                            <h3>依蘭</h3>
-
-                            <div class="info_tex"> 
-                            <p>功效
-                                抗發炎、保濕、預防妊娠紋</p>
-                            <p>適用
-                                溫和、嬰兒都能使用</p>
-                            </div>
-
-                        </li>
-
-                    </ul>
-
-                    <!-- 內容要改成底調 -->
-                    <ul class="item_info">
-                        <li class="info_area info1">
-                        <h3>雪松</h3>
-
-                        <div class="info_tex"> 
-                            <p>功效 
-                                改善乾燥、抗老、預防妊娠紋、卸妝</p>
-                            <p>適用 
-                                溫和滋潤、適用所有膚質</p>
-                        </div>
-
-                        </li>
-
-                        <li class="info_area info2">
-                            <h3>乳香</h3>
-
-                            <div class="info_tex"> 
-                                <p>功效 
-                                    抑制發炎症狀、預防黑斑、皺紋</p>
-                                <p>適用 
-                                    護膚、護髮、油性肌膚</p>
-                            </div>
-
-                        </li>
-
-                        <li class="info_area info3">
-                            <h3>廣藿香</h3>
-
-                            <div class="info_tex"> 
-                                <p>功效 
-                                    黏性高、軟化角質、肌膚再生</p>
-                                <p>適用 
-                                    乾性、缺水或老化肌膚</p>
-                            </div>
-
-                        </li>
-
-                        <li class="info_area info4">
-                            <h3>沒藥</h3>
-
-                            <div class="info_tex"> 
-                            <p>功效
-                                抗發炎、保濕、預防妊娠紋</p>
-                            <p>適用
-                                溫和、嬰兒都能使用</p>
-                            </div>
-
-                        </li>
-
-                    </ul>                
-
-                </div>
-
-            </div>
-
-            <!-- 中間選單 -->
-            <div class="mask_submenu">
-
-            <div class="submenu_all">
-
-                <!-- 基底油選單 -->
-                <ul class="submenu mid">
-
-                    <li class="bs_area bs1_btn">
-                        <!--橄欖油 -->
-                        <img src="../img/leaf_bs.png" alt="">
-
-                        <div class="hide">
-                            <img src="../img/olive.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs2_btn">
-                        <!--荷荷芭油 -->
-                        <img src="../img/leaf_bs.png" alt="">
-                        
-                        <div class="hide">
-                            <img src="../img/jojoba.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs3_btn">
-                        <!--酪梨油 -->
-                        <img src="../img/leaf_bs.png" alt="">
-                        
-                        <div class="hide">
-                            <img src="../img/avacado.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs4_btn">
-                        <!--月見草油 -->
-                        <img src="../img/leaf_bs.png" alt="">
-                        
-                        <div class="hide">
-                        <img src="../img/moon.png" alt="">
-                        <a href="../img/drop_ept.png" class="ept"></a>
-                        <a href="../img/dropt-half.png" class="half"></a>
-                        <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-
-                    </li> 
-                </ul>
-
-                <!-- 前調選單 -->
-                <ul class="submenu mid">
-
-                    <li class="bs_area bs1_btn">
-                        <!--  茶樹 -->
-                        <img src="../img/leaf_ft.png" alt="">
-
-                        <div class="hide">
-                            <img src="../img/tea.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs2_btn">
-                        <!-- 橙花 -->
-                        <img src="../img/leaf_ft.png" alt="">
-                        
-                        <div class="hide">
-                            <img src="../img/blossom.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs3_btn">
-                        <!-- 苦橙葉 -->
-                        <img src="../img/leaf_ft.png" alt="">
-                        
-                        <div class="hide">
-                            <img src="../img/orgleaf.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs4_btn">
-                        <!-- 薄荷 -->
-                        <img src="../img/leaf_ft.png" alt="">
-                        
-                        <div class="hide">
-                        <img src="../img/mint.png" alt="">
-                        <a href="../img/drop_ept.png" class="ept"></a>
-                        <a href="../img/dropt-half.png" class="half"></a>
-                        <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-
-                    </li> 
-                </ul>     
-                
-                <!-- 中調選單 -->
-                <ul class="submenu mid">
-
-                    <li class="bs_area bs1_btn">
-                        <!--絲柏-->
-                        <img src="../img/leaf_mid.png" alt="">
-
-                        <div class="hide">
-                            <img src="../img/cber.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs2_btn">
-                        <!-- 永久花 -->
-                        <img src="../img/leaf_mid.png" alt="">
-                        
-                        <div class="hide">
-                            <img src="../img/forever.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs3_btn">
-                        <!-- 薰衣草 -->
-                        <img src="../img/leaf_mid.png" alt="">
-                        
-                        <div class="hide">
-                            <img src="../img/lavender.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs4_btn">
-                        <!-- 依蘭 -->
-                        <img src="../img/leaf_mid.png" alt="">
-                        
-                        <div class="hide">
-                        <img src="../img/ylan.png" alt="">
-                        <a href="../img/drop_ept.png" class="ept"></a>
-                        <a href="../img/dropt-half.png" class="half"></a>
-                        <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-
-                    </li> 
-
-
-                </ul>      
-                
-                <!-- 底調選單 -->
-                <ul class="submenu mid">
-
-                    <li class="bs_area bs1_btn">
-                        <!-- 雪松 -->
-                        <img src="../img/leaf_lst.png" alt="">
-
-                        <div class="hide">
-                            <img src="../img/snow.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs2_btn">
-                        <!-- 乳香 -->
-                        <img src="../img/leaf_lst.png" alt="">
-                        
-                        <div class="hide">
-                            <img src="../img/mastic.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs3_btn">
-                        <!-- 廣藿香 -->
-                        <img src="../img/leaf_lst.png" alt="">
-                        
-                        <div class="hide">
-                            <img src="../img/Patchouli.png" alt="">
-                            <a href="../img/drop_ept.png" class="ept"></a>
-                            <a href="../img/dropt-half.png" class="half"></a>
-                            <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-                            
-                    </li>
-
-                    <li class="bs_area bs4_btn">
-                        <!-- 沒藥 -->
-                        <img src="../img/leaf_lst.png" alt="">
-                        
-                        <div class="hide">
-                        <img src="../img/myrrh.png" alt="">
-                        <a href="../img/drop_ept.png" class="ept"></a>
-                        <a href="../img/dropt-half.png" class="half"></a>
-                        <a href="../img/drop-fill.png" class="fill"></a>
-                        </div>
-
-                    </li> 
-
-
-                </ul>             
-
-            </div>
-
-
-
-
-            </div>
-
-
-
-             <!-- 左側選單 -->
-            <div class="mid midarea">
-
-                <ul class="sidemenu">
-                    <li class="sidemenu_def sidemenu_bs">
-                        <a href="">
-                        <img src="../img/leaf_bs.png" alt="">
-
-                        <div class="sidemenu_hide">
-                            <img src="../img/leaf_bs_c.png" alt="">
-                            <h3>基底油</h3>
-                        </div>
-
-                    </a></li>
-
-                    <li class="sidemenu_def sidemenu_ft">
-                        <a href="">
-                        <img src="../img/leaf_ft.png" alt="">
-
-                        <div class="sidemenu_hide">
-                            <img src="../img/leaf_ft_c.png" alt="">
-                            <h3>前調</h3>                    
-                        </div>
-                    
-                    </a></li>
-
-                    <li class="sidemenu_def sidemenu_mid">
-                        <a href="">
-                        <img src="../img/leaf_mid.png" alt="">
-
-                        <div class="sidemenu_hide">
-                            <img src="../img/leaf_mid_c.png" alt="">
-                            <h3>中調</h3>
-                        </div>
-
-                    </a></li>
-
-                    <li class="sidemenu_def sidemenu_lst"><a href="">
-                        <img src="../img/leaf_lst.png" alt="">
-
-                        <div class="sidemenu_hide">
-                        <img src="../img/leaf_lst_c.png" alt="">
-                        <h3>底調</h3>
-                        </div>     
-
-                    </a></li>
-
-                </ul>
-
-                <!-- 中間圖片區 -->
-                <div class="diyarea">
-                    <img src="../img/flowerframe6.png" alt="">
-                </div>
-
-            </div>
-
-        </div>
+    <header class="menu" id="navbar">
+      <nav class="menubox mid">
 
         <!-- 回首頁連結 -->
-        <a href="../index.html" class="logo_fix" id="logoFix">
-            <img src="../img/logo .png" alt="breath">
+        <a href="../index.html" class="logo_fix">
+          <img src="../img/logo_s.png" alt="breath">
         </a>
 
+        <!-- 主選單 -->
+        <ul class="menu_area" id="myLinks">
+            <li class="menu_tex">
+                <a href="../index.html#about" class="btn_t">關於我們</a></li>
 
-    <!-- footer -->
-        <footer class="foot">
-            <div class="mid inner">
-                <div>
-                <a class="btn ig" href="#"></a>
-                <a class="btn pi" href="#"></a>	
-                <a class="btn yt" href="#"></a>	
-                <a class="btn fb" href="#"></a>		
-                <p class="copyright">2021 All Rights Reserve</p>	
+            <li class="menu_tex product_block">
+                <a href="./product_1.html" class="btn_t">產品介紹</a>
+                <div class="sub_nav">
+                  <ul>
+                    <li class="sub_nav_li">
+                        <a href="./product_2.html" class="sub_nav_a">精油</a>
+                    </li>
+                    <li class="sub_nav_li">
+                        <a href="./product_2_bs.html" class="sub_nav_a">基底油</a>
+                    </li>
+                    <li class="sub_nav_li">
+                        <a href="./product_2_sc.html" class="sub_nav_a">香氛</a>
+                    </li>
+                  </ul>
                 </div>
-        
-                <a href="#" class="footlogo"><img src="../img/Logo-white.png" alt=""></a>
-                </div>	
-        
-        </footer>
+            </li>
 
-    </div>    
+            <li class="menu_tex thispage">
+                <a href="./diy.html" class="btn_t">專屬呼吸</a>
+                <img src="../img/hover_leaf.png" alt="" class="thispageleaf"> </li>
 
-    <script src="../js/style.js"></script>
+            <li class="menu_tex">
+                <a href="./course.html"  class="btn_t">呼吸學苑</a>                
+            </li>
+        </ul>
+        
+        <!-- 漢堡選單 -->
+        <button class="hamburger hamburger--spring" type="button"  onclick="myFunction()">
+          <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+      </nav>
+          
+    <style>
+   
+
+    </style>
+    </header>
+
+    <!-- Key Visual -->
+    <div class="keyvisual">
+      <div class="keyvisual_bgi">
+			</div>
+      <!-- 往下滑 test -->
+      <a href="#" class="scroll"><span></span></a>
+    </div>
+
+    <!-- quote -->
+    <div class="quote">
+        <p class="crs_tex">
+        這個世界<br>存在著各式各樣獨特的香氣<br>
+        我們的任務是去發現與感受它
+        </p>
+    </div>
+
+    <!-- main -->        
+    <main class="main" id="main_blcck">
+      <div class="main_inner mid">
+
+        <div class="top_block mid">
+          <ul class="menubar">
+            <li class="menuitem" id="link1">
+              <div class="baselink" onclick="opennumber('block1', this)" id="defaultOpen">
+                <div class="pic">
+                  <img src="../img/draw/leaf-7.svg" alt="">
+                  <img src="../img/draw/leaf-7_c.svg" alt=""> 
+                </div>
+                <h3>基底油<br>
+                  基底油</h3>
+              </div>  
+              <div class="bottomline"></div>
+            </li>
+  
+            <li class="menuitem" id="link2">
+              <div class="baselink" onclick="opennumber('block2', this)">
+                <div class="pic">
+                  <img src="../img/draw/leaf-3.svg" alt="">
+                  <img src="../img/draw/leaf-3_c.svg" alt=""> 
+                </div>
+                <h3>前調<br>
+                  前調</h3>
+              </div>
+              <div class="bottomline"></div>
+            </li>
+  
+            <li class="menuitem" id="link3">
+              <div class="baselink" onclick="opennumber('block3', this)">
+                <div class="pic">
+                  <img src="../img/draw/leaf-5.svg" alt="">
+                  <img src="../img/draw/leaf-5_c.svg" alt=""> 
+                </div>
+                <h3>中調<br>
+                  中調</h3>
+              </div>
+              <div class="bottomline"></div>
+            </li>
+  
+            <li class="menuitem" id="link4">
+              <div class="baselink" onclick="opennumber('block4', this)">
+                <div class="pic">
+                  <img src="../img/draw/leaf-4.svg" alt="">
+                  <img src="../img/draw/leaf-4_c.svg" alt=""> 
+                </div>
+                <h3>底調<br>
+                  底調</h3>
+              </div>
+              <div class="bottomline"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mid_block mid">
+          <div class="inner_block_area" id="block1"> 
+            <div class="inner_block">
+              <div class="left_area">
+                <div class="title">
+                  <h1 class="no">01</h1>
+                  <h1 class="sub_title">基底油</h1>
+                </div>
+                <p>基底油具備相當豐富的營養素，目的是將精油
+                  中的成分，更有效地引領到人體內。基底油除了可以
+                  稀釋有刺激性的精油，也提供按摩、潤滑的效果。 
+                  基底油被廣泛當作精油之間的媒介，
+                  但其實，大多數基底油本身就有很好的效果，
+                  即使單獨使用也能發揮效用。
+                </p>
+                <div class="sidemenuarea">
+                  <ul class="sidemenu ">
+                    <li class="sidedot" id="olive_drip" data-index="0">橄欖油
+              
+                    </li>
+                    <li class="sidedot" id="jojoba_drip" data-index="1">荷荷芭油
+                
+                    </li>
+                    <li class="sidedot" id="avacado_drip" data-index="2">酪梨油</li>
+                    <li class="sidedot" id="almond_drip" data-index="3">甜杏仁油</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- 內容輪播區 -->
+              <div class="right_area">
+                <div class="splide">
+                  <!-- 箭頭 -->
+                    <div class="splide__arrows">
+                      <button class="splide__arrow splide__arrow--prev">
+                        <!-- Prev -->
+                      </button>
+                      <button class="splide__arrow splide__arrow--next">
+                        <!-- Next -->
+                      </button>
+                    </div>
+                  <!-- 圖和文 -->
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_base.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>橄欖油</h3>
+                            <p>
+                              改善乾燥、抗老、防妊娠紋
+                            </p>
+                            <p>
+                              溫和滋潤、適用所有膚質
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_base.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>荷荷芭油</h3>
+                            <p>
+                              抑制發炎症狀、預防黑斑、皺紋
+                            </p>
+                            <p>
+                              護膚、護髮、油性肌膚
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_base.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>酪梨油</h3>
+                            <p>
+                              黏性高、軟化角質、肌膚再生
+                            </p>
+                            <p>
+                              乾性、缺水或老化肌膚
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_base.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>甜杏仁油</h3>
+                            <p>
+                              抗發炎、保濕、預防妊娠紋
+                            </p>
+                            <p>
+                              溫和、嬰兒都能使用
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn_add" id="add1">
+                    <img src="../img/btn_add.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- 以下之後要改新的內容 -->
+          <div class="inner_block_area" id="block2"> 
+            <div class="inner_block">
+              <div class="left_area">
+                <div class="title">
+                  <h1 class="no">02</h1>
+                  <h1 class="sub_title">前調</h1>
+                </div>
+                <p>前調決定了精油香氛的“第一印象”，因此前調大多選用氣味較為清新、溫暖的柑橘調，也是大部分人喜歡、能接受的氣味。例如，檸檬、薄荷、佛手柑、葡萄柚。
+                  前調的氣味較為輕盈，揮發速度也最快，持香時間約30分鐘。
+                </p>
+                <div class="sidemenuarea">
+                  <!-- 放類似麵包屑(先看輪播?) -->
+                  <ul class="sidemenu">
+                    <li class="sidedot" id="tree_drip">茶樹</li>
+                    <li class="sidedot" id="orgblossom_drip">橙花</li>
+                    <li class="sidedot" id="petitgrain_drip">苦橙葉</li>
+                    <li class="sidedot" id="mint_drip">薄荷</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- 內容輪播區 -->
+              <div class="right_area">
+                <div class="splide">
+                  <!-- 箭頭 -->
+                    <div class="splide__arrows">
+                      <button class="splide__arrow splide__arrow--prev">
+                        <!-- Prev -->
+                      </button>
+                      <button class="splide__arrow splide__arrow--next">
+                        <!-- Next -->
+                      </button>
+                    </div>
+                  <!-- 圖和文 -->
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_top.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>茶樹</h3>
+                            <p>
+                              改善乾燥、抗老、防妊娠紋、卸妝
+                            </p>
+                            <p>
+                              溫和滋潤、適用所有膚質
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_top.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>橙花</h3>
+                            <p>
+                              抑制發炎症狀、預防黑斑、皺紋
+                            </p>
+                            <p>
+                              護膚、護髮、油性肌膚
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_top.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>苦橙葉</h3>
+                            <p>
+                              黏性高、軟化角質、肌膚再生
+                            </p>
+                            <p>
+                              乾性、缺水或老化肌膚
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_top.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>薄荷</h3>
+                            <p>
+                              抗發炎、保濕、預防妊娠紋
+                            </p>
+                            <p>
+                              溫和、嬰兒都能使用
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn_add" id="add2">
+                    <img src="../img/btn_add.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="inner_block_area" id="block3"> 
+            <div class="inner_block">
+              <div class="left_area">
+                <div class="title">
+                  <h1 class="no">03</h1>
+                  <h1 class="sub_title">中調</h1>
+                </div>
+                <p>第二個出現的味道，也就是中調，持續時間大約1.5個小時。作為調香的核心，中調的氣味較為溫和、輕柔，更容易舒緩、放鬆，大多選用花香調、木質調。例如，薰衣草、玫瑰、茉莉、橙花、鼠尾草。
+                </p>
+                <div class="sidemenuarea">
+                  <!-- 放類似麵包屑(先看輪播?) -->
+                  <ul class="sidemenu">
+                    <li class="sidedot" id="cypress_drip">絲柏</li>
+                    <li class="sidedot" id="everlasting_drip">永久花</li>
+                    <li class="sidedot" id="lavender_drip">薰衣草</li>
+                    <li class="sidedot" id="yilan_drip">伊蘭</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 內容輪播區 -->
+              <div class="right_area">
+                <div class="splide">
+                  <!-- 箭頭 -->
+                    <div class="splide__arrows">
+                      <button class="splide__arrow splide__arrow--prev">
+                        <!-- Prev -->
+                      </button>
+                      <button class="splide__arrow splide__arrow--next">
+                        <!-- Next -->
+                      </button>
+                    </div>
+                  <!-- 圖和文 -->
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_mid.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>絲柏</h3>
+                            <p>
+                              改善乾燥、抗老、防妊娠紋、卸妝
+                            </p>
+                            <p>
+                              溫和滋潤、適用所有膚質
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_mid.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>永久花</h3>
+                            <p>
+                              抑制發炎症狀、預防黑斑、皺紋
+                            </p>
+                            <p>
+                              護膚、護髮、油性肌膚
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_mid.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>薰衣草</h3>
+                            <p>
+                              黏性高、軟化角質、肌膚再生
+                            </p>
+                            <p>
+                              乾性、缺水或老化肌膚
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_mid.png" alt="">
+                          <div class="info_tex"> 
+                            <h3>伊蘭</h3>
+                            <p>
+                              抗發炎、保濕、預防妊娠紋
+                            </p>
+                            <p>
+                              溫和、嬰兒都能使用
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <button type="button" class="btn_add" id="add3">
+                    <img src="../img/btn_add.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div> 
+          </div>
+          
+          <div class="inner_block_area" id="block4"> 
+            <div class="inner_block">
+              <div class="left_area">
+                <div class="title">
+                  <h1 class="no">04</h1>
+                  <h1 class="sub_title">後調</h1>
+                </div>
+                <p>後調是延長整體香味持續時間的定香氣味，揮發速度最慢。氣味深厚，大多選用東方調和木質調，例如，依蘭、廣藿香，持香時間可超過2個小時。
+                </p>
+                <div class="sidemenuarea">
+                  <!-- 放類似麵包屑(先看輪播?) -->
+                  <ul class="sidemenu">
+                    <li class="sidedot" id="cedar_drip">雪松</li>
+                    <li class="sidedot" id="mastic_drip">乳香</li>
+                    <li class="sidedot" id="patchouli_drip">廣藿香</li>
+                    <li class="sidedot" id="myrrh_drip">沒藥</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- 內容輪播區 -->
+              <div class="right_area">
+                <div class="splide">
+                  <!-- 箭頭 -->
+                    <div class="splide__arrows">
+                      <button class="splide__arrow splide__arrow--prev">
+                        <!-- Prev -->
+                      </button>
+                      <button class="splide__arrow splide__arrow--next">
+                        <!-- Next -->
+                      </button>
+                    </div>
+                  <!-- 圖和文 -->
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_last.png" alt="" class="last_img">
+                          <div class="info_tex"> 
+                            <h3>雪松</h3>
+                            <p>
+                              改善乾燥、抗老、防妊娠紋、卸妝
+                            </p>
+                            <p>
+                              溫和滋潤、適用所有膚質
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_last.png" alt="" class="last_img">
+                          <div class="info_tex"> 
+                            <h3>乳香</h3>
+                            <p>
+                              抑制發炎症狀、預防黑斑、皺紋
+                            </p>
+                            <p>
+                              護膚、護髮、油性肌膚
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_last.png" alt="" class="last_img">
+                          <div class="info_tex"> 
+                            <h3>廣藿香</h3>
+                            <p>
+                              黏性高、軟化角質、肌膚再生
+                            </p>
+                            <p>
+                              乾性、缺水或老化肌膚
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide pia">
+                        <div class="item">
+                          <img src="../img/diy_last.png" alt="" class="last_img">
+                          <div class="info_tex"> 
+                            <h3>沒藥</h3>
+                            <p>
+                              抗發炎、保濕、預防妊娠紋
+                            </p>
+                            <p>
+                              溫和、嬰兒都能使用
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn_add" id="add4">
+                    <img src="../img/btn_add.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bottom_block mid">
+          <div class="choice">
+            <div class="choice_item_area">
+              <!-- <img src="" alt="">放背景色塊來轉 -->
+              <div class="choice_item"></div>
+              <img src="../img/diy_base.png" alt="" class="img_base">
+              <button type="button" class="btn_remove" id="remove1">
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="choice_item_area">
+              <!-- <img src="" alt="">放背景色塊來轉 -->
+              <div class="choice_item"></div>
+              <img src="../img/diy_top.png" alt="" class="img_top">
+              <button type="button" class="btn_remove" id="remove2">
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="choice_item_area">
+              <!-- <img src="" alt="">放背景色塊來轉 -->
+              <div class="choice_item"></div>
+              <img src="../img/diy_mid.png" alt="" class="img_mid">
+              <button type="button" class="btn_remove" id="remove3">
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="choice_item_area">
+              <!-- <img src="" alt="">放背景色塊來轉 -->
+              <div class="choice_item"></div>
+              <img src="../img/diy_last.png" alt="" class="img_last">
+              <button type="button" class="btn_remove" id="remove4">
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+
+          </div>
+          <button class="finish" id="btn_finish">finish</button>
+        </div>
+
+        <!-- rwd bottom block -->
+        <div class="rwd_bottom_block">
+          <div class="rwd_choice">
+            <div class="rwd-item_area">
+        
+              <div class="choice_item"></div>
+              <img src="../img/diy_base.png" alt="" class="img_base">
+              <button type="button" class="rwd_btn_remove" id="remove_S1">
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="rwd-item_area">
+              
+              <div class="choice_item"></div>
+              <img src="../img/diy_top.png" alt="" class="img_top">
+              <button type="button" class="rwd_btn_remove" id="remove_S2">
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="rwd-item_area">
+             
+              <div class="choice_item"></div>
+              <img src="../img/diy_mid.png" alt="" class="img_mid">
+              <button type="button" class="rwd_btn_remove" id="remove_S3">
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="rwd-item_area">
+       
+              <div class="choice_item"></div>
+              <img src="../img/diy_last.png" alt="" class="img_last">
+              <button type="button" class="rwd_btn_remove" id="remove_S4">
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+
+          </div>
+          <button class="rwd_finish" id="rwd_btn_finish">finish</button>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- 隱藏區塊 -->
+    <div class="yours">
+      <div class="yours_inner">
+        <button type="button" class="close_yours"><i class="far fa-times-circle"></i>XX</button>
+        <h1>您的專屬呼吸調配完成</h1>
+        <div class="yours_main">
+          <div class="yours_left">
+            <img src="../img/diy_finish.png" alt="">
+          </div>
+          <div class="yours_right">
+            <ul class="yours_table">
+              <li class="yours_item">
+                <h3>基底油</h3>
+                <p>荷荷芭油</p>
+              </li>
+              <li class="yours_item">
+                <h3>前調</h3>
+                <p>橙花</p>
+              </li>
+              <li class="yours_item">
+                <h3>中調</h3>
+                <p>絲柏</p>
+              </li>
+              <li class="yours_item">
+                <h3>後調</h3>
+                <p>雪松</p>
+              </li>
+            </ul>
+            <button type="submit" class="close_cart">
+              <img src="../img/cart_full.svg" alt="" class="cart1">
+              <img src="../img/cart.svg" alt="" class="cart2">
+              <span class="popover">
+                已加入購物車
+              </span>
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- rwd 隱藏區塊 -->
+    <div class="rwd_yours">
+      <div class="">
+        <button type="button" class="rwd_close_yours">
+          <i class="far fa-times-circle"></i>
+        </button>
+        <h1>您的專屬呼吸調配完成</h1>
+        <div class="rwd_yours_main">
+          <div class="yours_upper">
+            <img src="../img/diy_finish.png" alt="">
+          </div>
+          <div class="yours_under">
+            <ul class="rwd_table">
+              <li class="yours_item">
+                <h3>基底油</h3>
+                <p>荷荷芭油</p>
+              </li>
+              <li class="yours_item">
+                <h3>前調</h3>
+                <p>橙花</p>
+              </li>
+              <li class="yours_item">
+                <h3>中調</h3>
+                <p>絲柏</p>
+              </li>
+              <li class="yours_item">
+                <h3>後調</h3>
+                <p>雪松</p>
+              </li>
+            </ul>
+            <button type="submit" class="close_cart">
+              <img src="../img/cart_full.svg" alt="" class="cart1">
+              <img src="../img/cart.svg" alt="" class="cart2">
+              <span class="rwd_popover">
+                已加入購物車
+              </span>
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer 共用 -->
+		<div class="foot">
+			<div class="mid foot_inner">
+				<div>
+				<a class="btn ig" href="#"></a>
+				<a class="btn pi" href="#"></a>	
+				<a class="btn yt" href="#"></a>	
+				<a class="btn fb" href="#"></a>		
+				<p class="copyright">2021 All Rights Reserve</p>	
+				</div>
+		
+				<a href="#" class="footlogo"><img src="../img/Logo-white.png" alt=""></a>
+				</div>	
+		</div> 
+
+  </div>   
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+
+   <!--輪播  -->
+  <script src="../vender/splide/splide.min.js"></script>
+  
+  <script src="../js/style.js"></script>
+  <script src="../js/diy.js"></script>
+  
 
 </body>
 </html>   

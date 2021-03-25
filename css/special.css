@@ -1,78 +1,143 @@
-.wrap{
-	font-family: Noto Sans TC;
-	color: #7B6363;
-    position: relative;
-} 
-
-.wrap .contain{
+.contain{
     background-image: url(../img/background-b.png);
-    /* display: flex; */
-    height: 1500px;
-    margin-bottom: 0;
+    padding-bottom: 250px;
 }
 
 .top{
-    /* height: 1000px; */
-    height: 850px;
-    display: inline-flex;
-    width: 1200px;
+    display: flex;
     margin: 0 auto;
     position: relative;
+    height: fit-content;
+}
+
+@media screen and (max-width: 991px){
+    .top{
+        display: initial;
+        position: initial;
+    }
 }
 
 .left{
-    width: 60%;
-    display: inline-block;
-    position: absolute;
-    top: -80px;
-    left: -80px;
-    overflow: hidden;
-    max-height: 800px;
-    z-index: 1;
+    width: 50%;
 }
 
+.left img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
 
 /* main介紹區塊 */
 .main{
+    box-sizing: border-box;
     text-align: left;
-    width: 33%;
-    display: inline-block;
-    padding-top: 5%;
-    position: absolute;
-    /* left: 60%; */
-    right: 30px;
+    width: 50%;
+    padding: 50px;
+    padding-top: 70px;
 }
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .left{
+        width: 35%;
+        position: relative;
+    }
+    
+    .left img{
+        position: absolute;
+        right: 0;
+        top: 15%;
+    }
+    
+    .main{
+        box-sizing: border-box;
+        text-align: left;
+        width: 65%;
+        padding: 50px;
+        padding-top: 70px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .scroll span{
+        border: none;
+    }
+
+    .scroll span::before {
+        background-color: transparent;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    .scroll span{
+        border: 1px solid #927A74;
+    }
+
+    .scroll span::before {
+        background-color: #927A74;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .left{
+        width: 100%;
+        position: relative;
+    }
+
+    .left img{
+        width: 100vw;
+    }
+
+    .main{
+        width: 100%;
+        padding-top: 10px;
+    }
+}
+
 .main .title{
-    /* font-size: 35px; */
     font-weight: bold;
     font-family: rage;
-    font-size: 55px;
-    padding-bottom:30px ;
-    margin-left: -10%;
+    padding-bottom: 30px;
 }
 
 .tex{
-    width: 100%;
+    width: 90%;
     position: relative;
+    padding-left: 10%;
 }
 
 /* 那條線 */
-
 .tex h2:before{
 	content: " ";
 	background-color: #7B6363;
-	width: 2px; 
-	height: 100%;
+	width: 1px; 
+	height: 90%;
 	position: absolute;
 	top: 0;
-	left: -5%;
+	left: 2%;
 	display: inline-block;
   }
 
+@media screen and (max-width: 991px){
+    .tex{
+        padding-left: 0%;
+    }
+
+    .tex h2:before{
+        display: none;
+    }
+}
 
 .main .item_sub{
     font-size: 20px;
     padding-bottom:20px ;
+}
+
+@media screen and (max-width: 991px){
+    .main .item_sub{
+        font-weight: bold;
+    }
+    
 }
 
 .main .item_sub2{
@@ -81,8 +146,6 @@
 }
 
 .article{
-    /* display: inline-block; */
-    /* padding-top: 20px; */
     padding: auto;
     font-size: 14px;
     line-height: 1.8;
@@ -90,56 +153,116 @@
     display: block;
 }
 
-.main .vol{
-    display: inline-block;
-    font-family: Varela Round;
-    font-size: 12px;
-    width: 130px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    box-shadow: 5px 10px 15px #E2CDAE;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 50px;
-    margin-right: 30px;
+.price{
+    padding-top: 35px;
+    display: flex;
 }
 
-.main .vol:hover{
-        background-color: #E2CDAE;
-        color: #FEF8EF;
-        font-weight: bold;
-        text-shadow: 0.1em 0.1em #A0BD90;
+.vol{
+    padding-right: 20px;
+}
+
+.price_inner{
+    font-family: Varela Round;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #E2CDAE;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 991px){
+    .price{
+        display: initial;
+    }
+
+    .vol{
+        padding-bottom: 20px;
+    }
+    
+    .price_inner{
+        width: 40%;
+    }
+
+}
+
+li.vol:hover .price_inner{
+    background-color: #927A74;
+    color: #FEF8EF;
 }
 
 
 /* 建議搭配區塊 */
+@media screen and (max-width: 991px){
+    .bottom::before{
+        content: " ";
+        background-color: #A0BD90;
+        width: 90%; 
+        height: 1px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+}
+
 .sug{
+    display: block;
     font-size: 20px;  
     font-weight: bold;
-    margin-bottom: 60px;
-
-
+    margin: 50px auto;
 }
 
-.bottom ul{
-    display: flex;
-    width: 1200px; 
-    overflow: hidden;
-    height: 360px;
+.swiper-container {
+    max-width: 600px;
+    height: 300px;
+    /* border: 1px solid olive; */
+
+}
+  
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 255px;
+    height: 300px;
+    /* border: 1px solid red; */
 }
 
-.bottom ul a{
-    width: 280px;
-    height: 333px;
+
+.bottom .link{
+    width: 255px;
+    height: 300px;
     border-radius: 5%;
     display: inline-block;
     background-color:  rgba(254, 248, 239, 0.7);
     position: relative;
     flex-grow: 1;
     box-shadow: 5px 10px 15px #E2CDAE;
-    margin: 0 30px;
+    background-image: url(../img/bottle.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center;
+}
+
+.link img{
+    opacity: 0;
+    position: relative;
+    border-radius: 5%;
+}
+
+.link .more_btn{
+    /* position: absolute; */
+    top: -202px;  
+    left: 0px;
+}
+
+.link:hover img{
+    opacity: 1;
+    z-index: 1;
 }
 
 .bottom h3{
@@ -148,23 +271,25 @@
     left: 30px;
 }
 
-.bottom{
-    width: 1200px;
-    margin: 0 auto;
-    /* padding-bottom: 100px; */
-    /* display: block; */
-    height: 500px;
-}
-
 /* breadcrumb */
 .breadcrumb{
     position: absolute;
-    right: -15px;;    
-    top: 0px;
+    right: 10px;    
+    top: 10px;
     padding: 5px 10px;
     display: block;
     width: 500px;
     text-align: right;
+}
+
+@media screen and (max-width: 991px){
+    .breadcrumb{
+        display: block;
+        position: initial;
+        padding: initial;
+        text-align: left;
+        padding-bottom: 50px;
+    }
 }
 
 .breadcrumb .breadcrumb_list{
@@ -180,8 +305,6 @@
     font-size: 14px;
 }
   
-  
-  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
 .breadcrumb .breadcrumb_list > li::before{
     content: "/";
     font-size: 18px;
@@ -189,21 +312,19 @@
     margin-right: 12px;
 }
 
-/* 第一個 li 元素，將 ::before 設定回來需要的 */
 div.breadcrumb ol.breadcrumb_list > li:first-child::before{
     content: "";
     margin-right: 0;
 }
   
   
-/* 基本文字樣式 */
 div.breadcrumb ol.breadcrumb_list > li > a{
     text-decoration: none;
     display: inline-block;
     color: #C0A995;
 }
   
-/* 滑動移過後改變文字顏色 */
+
 div.breadcrumb ol.breadcrumb_list > li > a:hover{
     color: #7B6363;
 }

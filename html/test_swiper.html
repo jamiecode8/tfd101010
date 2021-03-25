@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="../css/style.css">
+
+
+<style>
+
+body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+.swiper-container {
+  width: 600px;
+  height: 300px;
+  /* height: 600px; */
+}
+
+.swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      /* height: 600px; */
+    }
+
+    
+.test_block{
+  width: 1000px;
+  background-color: white;
+  border: 1px solid indigo;
+  margin-left: 50px;
+  margin-top: 50px;
+  height: 100px;
+  position: relative;
+}
+
+.inner{
+  border: 1px solid palevioletred;
+  width: 100vw;
+  position: absolute;
+  left: -50px ;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="test_block">
+    test area
+    <div class="inner">
+      想放背景
+    </div>
+  </div>
+
+<!-- swiper測試區 -->
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <a href="./makao.html" class="link link1">
+        <h3>甜橙</h3>
+        <img src="../img/orange.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">    
+        </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="#" class="link link2">
+        <h3>佛手柑</h3>   
+        <img src="../img/bergamot.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+        </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="#" class="link link3">
+        <h3>葡萄柚</h3> 
+        <img src="../img/grapefruit_m.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">       
+        </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="#" class="link link4">
+        <h3>花梨木</h3>   
+        <img src="../img/rosewood_m.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+        </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="#" class="link link5">
+        <h3>乳香</h3>    
+        <img src="../img/mastic_m.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">    
+        </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="#" class="link link6">
+        <h3>檀香</h3>   
+        <img src="../img/sandalwood.png" alt="">
+        <img src="../img/more_b_shd.png" alt="" class="more_btn">     
+        </a>
+    </div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <!-- <div class="swiper-pagination"></div> -->
+
+  <!-- If we need navigation buttons -->
+  <!-- <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
+
+  <!-- If we need scrollbar -->
+  <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+
+  
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+//     const swiper = new Swiper('.swiper-container', {
+//   // Optional parameters
+//   direction: 'vertical',
+//   loop: true,
+
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+// });
+var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      // pagination: {
+      //   el: '.swiper-pagination',
+      // },
+    });
+
+  </script>
+</body>
+</html>

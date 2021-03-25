@@ -1,40 +1,47 @@
 .title3{
-    font-size: 20px;
-    font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .quote .crs_tex{
-    font-size: 16px;
-    padding-bottom:60px;
-    font-family: 'Varela Round', sans-serif, Noto Sans TC;
+	font-size: 16px;
+	padding-bottom:60px;
+	font-family: 'Varela Round', sans-serif, Noto Sans TC;
 }
 
-/* header */
-.header{
-    background-image: url(../img/course.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: cover;
-    height: 775px;
+/* Key Visual */
+.keyvisual{
+	height: calc(100vh - 105px);
+	overflow: hidden;
 }
 
+.keyvisual_bgi{
+	background-image: url(../img/course.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: cover;
+	height: calc(100vh - 105px);
+	transition: all 5s;
+}
 
+.keyvisual:hover .keyvisual_bgi{
+	transform: scale(1.1);
+}
 
 /* quote */
 
 .quote{
-    text-align: center;
-    background-image: url(../img/background-quote.png);
-    padding-top: 60px;
-    padding-bottom: 60px;
+	text-align: center;
+	background-image: url(../img/background-quote.png);
+	padding-top: 60px;
+	padding-bottom: 60px;
  
 }
 
 .quote p{
-    letter-spacing:3px;
+  letter-spacing:3px;
 	line-height: 38px; 
-    padding-top: 20px;  
-    /* position: relative; */
+  padding-top: 20px;  
 }
 
 .quote p:after{
@@ -44,45 +51,77 @@
 	height: 3px;
 	display: block;
 	margin: 0 auto;
-    margin-top: 30px;
-  }
+  margin-top: 30px;
+}
 
 /* 內容區 */
+:root{
+	--course-height: 595px;
+	--course-width: 380px;
+}
+
 .main{
-    background-image: url(../img/background-b.png);
-    height: 2680px;
+	background-image: url(../img/background-b.png);
+	position: relative;
 }
 
-.main::after {
-    width:1.5px; 
-	height: 2400px;
-    content: " ";
-	background-color: #A0BD90;
+@media screen and (min-width: 1199px) {
+	.main::after {
+		width:1.5px; 
+		height: 100%;
+		content: " ";
+		background-color: #A0BD90;
+		margin: 0 auto;
+		position: absolute;
+		top: -30px;
+		} 
+}
+
+/* position */
+.main_inner{
+	position: relative;
+	padding-bottom: 100px;
+}
+
+/* 課程的位置 */
+.main_inner > .course{
+	width: var(--course-width);
+	height: var(--course-height);
+	text-align: left;
+	box-sizing: border-box;
+	background-color: #fff; 
+	box-shadow: 10px 10px 15px #E2CDAE;
 	display: block;
-	margin: 0 auto;
-  }
-
-.course{
-    width: 380px;
-    height: 595px;
-    text-align: left;
-    box-sizing: border-box;
-    background-color: #fff; 
-    -webkit-box-shadow: 10px 10px 15px #E2CDAE;
-    display: block;
-    position: relative;
-    border-radius: 5px;
+	position: relative;
+	border-radius: 5px;   
+	margin: 5px 50%-(var(--course-width))/2;
+	left: 100px;
 }
- 
-.course article{
-    /* padding: 20px; */
+
+.main_inner > .course:nth-child(2n){
+	left: 720px;
+}
+
+@media screen and (max-width: 1199px){
+	.main_inner > .course{
+		display: block;
+		position: initial;
+		border-radius: 5px;   
+		margin: 0 auto 50px;
+	}
+}
+
+@media screen and (max-width: 575px){
+	.main_inner > .course{
+		width: var(--course-width)*75%;
+	}
 }
 
 .course h3{
-    display: inline-block;
-    position: absolute;
-    bottom: 190px;
-    left: 25px;
+	display: block;
+	position: absolute;
+	bottom: 190px;
+	left: 10%;
 }
 
 .course h3:after{
@@ -92,65 +131,46 @@
 	height: 3px;
 	position: absolute;
 	top:40px;
-	/* bottom: 0; */
 	left: 0px;
 	display: block;
 	margin: auto;
-  }
+}
 
 .course p{
-    display: inline-block;
-    position: absolute;
-    width: 340px;
-    top: 450px;
-    left:25px;
-    text-align: left;
-
+	display: inline-block;
+	position: absolute;
+	/* width: 340px; */
+	width: 80%;
+	top: 450px;
+	/* left:25px; */
+	left: 10%;
+	text-align: left;
 }
 
+/* 葉子的位置 */
 
-/* position */
-.mid{
-    position: relative;
+@media screen and (min-width: 1200px) {
+	.leaf_lft{
+		position: absolute;
+		left: 460px;
+		top: 5px;
+		width: 60px;
+	}
+	
+	.leaf_rt{
+		position: absolute;
+		left: -140px;
+		top: 5px;
+		width: 60px;
+	}
 }
 
-.crs1{
-    position: absolute;
-    left: 100px;
-}
-
-.leaf_lft{
-    position: absolute;
-    left: 460px;
-    top: 5px;
-}
-
-.leaf_rt{
-    position: absolute;
-    left: -140px;
-    top: 5px;
-}
-
-.crs2{
-    position: absolute;
-    left: 720px;
-    top: 580px;
-}
-
-.leaf_{
-    position: absolute;
-    left: -140px;
-    top: 5px;
-}
-
-.crs3{
-    position: absolute;
-    left: 100px;
-    top: 1160px;
-}
-
-.crs4{
-    position: absolute;
-    top: 1740px;
-    left: 720px;
+@media screen and (max-width: 1199px) {
+	.leaf_lft{
+		display: none;
+	}
+	
+	.leaf_rt{
+		display: none;
+	}
 }

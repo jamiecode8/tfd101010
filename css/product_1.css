@@ -2,8 +2,13 @@
     background-image: url(../img/background-b.png);
 }
 
+*{
+    outline: none;
+}
+
 .contain{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;    
     height: 600px;
     display: flex;
@@ -39,10 +44,12 @@
 }
 
 .sc{
-    flex: 1 0 ;    
+    background-image: url(../img/sc0.png);
+       flex-grow: 1;
+       flex: 1 0 ; 
 }
 
-.contain :not(:last-child) :after{
+.bs:after{
     content: " ";
 	background-color:rgba(254, 248, 239, 0.2);
 	width: 15px; 
@@ -52,7 +59,7 @@
 	right: -15px;
 }
 
-.contain :not(:first-child) :before{
+.bs:before{
     content: " ";
 	background-color:rgba(254, 248, 239, 0.2);
 	width: 15px; 
@@ -62,17 +69,86 @@
 	left: 0px;
 }
 
-.sc{
-    background-image: url(../img/sc0.png);
-       flex-grow: 1;
-}
-
 a{
     transition:.5s;
 }
 
-a:hover{
+.contain a:hover{
     transition: 3s;
-    filter: grayscale(0);
     flex-grow: 20;
+}
+
+.swiper-container{
+    display: none;
+}
+
+/* rwd */
+@media screen and (max-width: 767px){
+    .contain, .bs:after, .bs:before{
+        display: none;
+    }
+
+    .swiper-container {
+        display: block;
+        width: 100%;
+        height: calc(100vh - 105px);
+      }
+      
+    .swiper-slide {
+      background: transparent;;
+      display: flex;
+      height: calc(100vh - 105px);
+      position: relative;
+    }
+      
+    .tex{
+    position: absolute;
+    margin-top:initial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 40%;
+    /* align-items: center; */
+    padding-top: initial;
+    padding-bottom: initial;
+    background-color: rgba(254, 248, 239, 0.5);
+    color: #FEF8EF;
+    text-shadow:3px 6px 6px #7b6363;
+    }
+    
+    .es_en_title{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .es_ch_title{
+        position: absolute;
+        font-size: 23px;
+        line-height: 1.5;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+    /* color: rgba(123, 99, 99, 0.6); */
+    /* color: rgba(168, 189, 144, 0.6); */
+    color: rgba(254, 248, 239, 0.5);
+    text-shadow:0.5px 0.5px 5px #FEF8EF;
+    }
+    
+    .es{
+    background-image: url(../img/ess0.png);
+    }
+    
+    .bs{
+    background-image: url(../img/bs0.png);
+    }
+    
+    .sc{
+    background-image: url(../img/sc0.png);
+    }
 }
