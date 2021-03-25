@@ -34,10 +34,10 @@
 	position: absolute;
 	left: 30px;
 	top: 0px;
-	animation: img_dw 1.5s linear 1;
+	/* animation: img_dw 1.5s linear 1; */
 }
 
-@keyframes img_dw{
+/* @keyframes img_dw{
 	0%{
 		left: 150px;
 		top: -150px;
@@ -48,17 +48,17 @@
 		top: 0px;
 		opacity: 1;
 	}
-}
+} */
 
 .img_up{
 	position: absolute;
 	left: 0px;
 	top: 30px;
-	animation: img_up 1.5s linear 1;
+	/* animation: img_up 1.5s linear 1; */
 	z-index: 2;
 }
 
-@keyframes img_up{
+/* @keyframes img_up{
 	0%{
 		left: -150px;
 		top: 90px;
@@ -69,7 +69,7 @@
 		top: 30px;
 		opacity: 1;
 	}
-}
+} */
 
 
 @media screen and (min-width: 768px) and (max-width: 931px){

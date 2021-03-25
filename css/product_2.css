@@ -155,6 +155,11 @@ main{
     outline: none;
 }
 
+.item_menu:hover{
+	background-color: rgba(146, 116, 118, 0.3);
+	transition: 1s;
+}
+
 @media screen and (max-width: 767px){
 	.item_menu{
     display: none;
