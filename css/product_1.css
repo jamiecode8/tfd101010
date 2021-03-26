@@ -109,7 +109,6 @@ a{
     transform: translate(-50%, -50%);
     width: 65%;
     height: 40%;
-    /* align-items: center; */
     padding-top: initial;
     padding-bottom: initial;
     background-color: rgba(254, 248, 239, 0.5);
@@ -134,8 +133,6 @@ a{
     }
 
     .swiper-button-next, .swiper-button-prev{
-    /* color: rgba(123, 99, 99, 0.6); */
-    /* color: rgba(168, 189, 144, 0.6); */
     color: rgba(254, 248, 239, 0.5);
     text-shadow:0.5px 0.5px 5px #FEF8EF;
     }

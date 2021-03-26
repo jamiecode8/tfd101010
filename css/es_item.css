@@ -4,7 +4,6 @@
 } 
 
 /* rwd時的視覺首圖 */
-
 .rwd_visual{
     position: fixed;
     height: calc((100vh - 105px))*60%;
@@ -45,7 +44,6 @@
     left: 0;
     width: 100%;
 }
-
 
 @media screen and (min-width: 992px){
     .rwd_visual{

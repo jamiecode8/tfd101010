@@ -56,7 +56,6 @@ body{
 
 .quote{
 	text-align: center;
-	/* background-image: url(../img/background-quote.png); */
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -184,7 +183,6 @@ body{
 	margin: 0 auto;
 	align-items: center;
 	overflow: hidden;
-	/* border: 1px solid red; */
 	height: 60px;
 	position: relative;
 }
@@ -197,7 +195,6 @@ body{
 	width: 60px;
 	height: 120px;
 	overflow: hidden;
-	/* border: 1px solid #7B6363; */
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
 	.baselink .pic{
@@ -376,7 +373,6 @@ body{
 	line-height: 80px;
 	flex-grow: 1;
 	cursor: pointer;
-	/* border: 1px solid red; */
 }
 
 .sidedot:hover{
@@ -463,51 +459,18 @@ body{
 .splide__arrow--next svg {
   display:none ;
 }
-  
-/* 點點選單 */
-/* #block1 .splide__pagination{
-	left: -85%;
-	bottom: 6em;
-	width: 165%;
-}
-
-#block2 .splide__pagination{
-	left: -85%;
-	bottom: 8.8em;
-	width: 165%;
-}
-
-#block3 .splide__pagination{
-	left: -85%;
-	bottom: 10.3em;
-	width: 165%;
-}
-
-#block4 .splide__pagination{
-	left: -85%;
-	bottom: 12em;
-	width: 165%;
-} */
-
-/* .splide__pagination li{
-	margin-right: 15px;
-	border: 1px solid red;
-} */
 
 .splide__pagination__page{
 	width: 50px;
 	height: 40px;
-	/* margin-right: 2px; */
 }
 
 .splide__pagination__page{
-	/* background-color: #FEF8EF; */
 	border-radius:initial;
 	background-color: transparent;
 }
 
 .splide__pagination__page.is-active {
-	/* background-color: #E2CDAE; */
 	border-radius:initial;
 	background-color: transparent;
 }
@@ -515,14 +478,9 @@ body{
 /* 圖文下方文字區 */
 
 .info_tex h3{
-	/* display: inline-block; */
 	line-height: 50px;
 	font-weight: bold;
 	text-align: center;
-}
-
-.info_tex p{
-	/* padding: 5px 0px; */
 }
 
 .btn_add{
@@ -644,7 +602,6 @@ button.finish:hover::after{
 	}
 }
 
-
 /* hover state */
 @media screen and (min-width: 768px){
 	.choice_item_area:hover .btn_remove{
@@ -664,8 +621,6 @@ button.finish:hover::after{
 		display: none;
 	}
 }
-
-
 
 /* 下方區域 手機板 */
 @media screen and (max-width: 767px){
@@ -714,7 +669,6 @@ button.finish:hover::after{
 		position: absolute;
 		top: 5px;
 		right: 5px;
-		/* border: 1px solid red; */
 		width: 30px;
 		height: 30px;
 	}
@@ -750,17 +704,14 @@ button.finish:hover::after{
 	}
 }
 
-
 .menubar{
 	display: flex;
 	margin: 0 auto;
 }
 
-
 .img_base, .img_top,.img_mid,.img_last{
 	pointer-events: none;
 }
-
 
 /* 景深 */
 .blur{
@@ -769,7 +720,6 @@ button.finish:hover::after{
 }
 
 /* 隱藏區塊_固定板型 */
-
 @media screen and (min-width: 768px){
 	.rwd_yours{
 		display: none;
@@ -864,11 +814,6 @@ button.finish:hover::after{
 
 	.popover{
 		position: absolute;
-		/* background: #fed; */
-		/* border: 1px solid rgba(0,0,0,.3); */
-		/* border-radius: 5px; */
-		/* padding: 10px; */
-		/* font-size: 16px; */
 		display: none;
 		top: 17px;
 		left: 100px;
@@ -896,12 +841,9 @@ button.finish:hover::after{
 		transition-delay: 0.1s;
 		opacity: 1;
 	}
-	
 }
 
-
 /* 隱藏區塊_手機板 */
-
 @media screen and (max-width: 767px){
 	.yours{
 		display: none;
@@ -915,7 +857,6 @@ button.finish:hover::after{
 		position: relative;
 		position: fixed;
 		top: 20%;
-		/* top: 5%; */
 		border-radius: 20px;
 		background-color: #fff;
 		box-shadow: 2px 2px 5px #E2CDAE;
@@ -985,7 +926,6 @@ button.finish:hover::after{
 	.close_cart:focus .rwd_popover{
 		display: block;
 	}
-
 
 	.cart1{
 		opacity: 0;

@@ -17,7 +17,6 @@
 }
 
 .img_area{
-	/* border:1px solid rebeccapurple; */
 	width: 50%;
 	margin-left: 50%;
 	position: relative;
@@ -35,43 +34,14 @@
 	position: absolute;
 	left: 30px;
 	top: 0px;
-	/* animation: img_dw 1.5s linear 1; */
 }
-
-/* @keyframes img_dw{
-	0%{
-		left: 150px;
-		top: -150px;
-		opacity: 0;
-	}
-	100%{
-		left: 30px;
-		top: 0px;
-		opacity: 1;
-	}
-} */
 
 .img_up{
 	position: absolute;
 	left: 0px;
 	top: 30px;
-	/* animation: img_up 1.5s linear 1; */
 	z-index: 2;
 }
-
-/* @keyframes img_up{
-	0%{
-		left: -150px;
-		top: 90px;
-		opacity: 0;
-	}
-	100%{
-		left: 0px;
-		top: 30px;
-		opacity: 1;
-	}
-} */
-
 
 @media screen and (min-width: 768px) and (max-width: 931px){
 	.keyvisal{
@@ -119,7 +89,6 @@
 .keyvisal .p2{
 	left: 50px;
 	top: 130px;
-	/* animation: p2 1.5s linear 1; */
 }
 
 @media screen and (min-width: 768px) and (max-width: 931px){
@@ -200,7 +169,6 @@
 		background-position: 0px 0px;
 		width: 100%;
 		height: 60%;
-		/* height: 310px; */
 	}
 }
 
@@ -298,7 +266,6 @@
 	.ab_pic{
 	margin:0;
 	width: 100%;
-	/* position: relative; */
 	display: block;
 	padding: 0px;
 	padding-top: 75px;
@@ -351,14 +318,12 @@
 	.ab_pic{
 		margin:0;
 		width: 100%;
-		/* position: relative; */
 		display: block;
 		padding: 0px;
 		padding-top: 75px;
 	}
 
 	.ab_tex{
-		/* border:1px solid indigo; */
 		width: 100%;
 		justify-content:center;
 		text-align: center;
@@ -519,7 +484,6 @@
 	}
 
 	.news_right{
-		/* background-size: auto; */
 		width: 100%;
 		margin: 0;
 		padding-bottom: 45px;
@@ -630,7 +594,6 @@
 	}
 
 	.news_right .news_texa{
-		/* display: inline-block; */
 		width: 270px;
 		box-shadow: 5px 5px 10px #C0A995;
 		background-color:rgba(255, 255, 255, 0.5);
@@ -961,8 +924,6 @@
 /*animal*/
 .animal{
 	background-color: white ;
-	/* background-image: url(../img/background-quote.png); */
-	/* background-blend-mode: multiply; */
 }
 
 .animal_inner, .animal_pic{

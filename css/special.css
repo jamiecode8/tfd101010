@@ -227,8 +227,6 @@ li.vol:hover .price_inner{
 .swiper-container {
     max-width: 600px;
     height: 300px;
-    /* border: 1px solid olive; */
-
 }
   
 .swiper-slide {
@@ -236,7 +234,6 @@ li.vol:hover .price_inner{
     background-size: cover;
     width: 255px;
     height: 300px;
-    /* border: 1px solid red; */
 }
 
 
@@ -262,7 +259,6 @@ li.vol:hover .price_inner{
 }
 
 .link .more_btn{
-    /* position: absolute; */
     top: -202px;  
     left: 0px;
 }
@@ -286,7 +282,6 @@ li.vol:hover .price_inner{
         top: 10px;
         padding: 5px 10px;
         display: block;
-        /* width: 500px; */
         width: fit-content;
         text-align: right;
     }
@@ -339,7 +334,6 @@ li.vol:hover .price_inner{
     .rwd_breadcrumb{
         background-image: url(../img/background-rwd-navbar.png);
         display: block;
-        /* width: 100vw; */
         text-align: end;
     }
     .rwd_breadcrumb .breadcrumb_list > li{

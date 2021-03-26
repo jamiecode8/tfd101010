@@ -113,7 +113,6 @@ button:hover{
 
 /* nav */
 .menu{
-  /* background-image: url(../img/background-menu_def.png); */
 	opacity: 0.8;
   font-size: 14px;
 	transition: top .4s ease-in-out;
@@ -124,22 +123,12 @@ button:hover{
 	background-color: rgba(255,255,255,0.8);	
 	background-image: url(../img/background-rwd-navbar.png);
 	background-blend-mode: multiply;
-
-	/* position: relative; */
 }
 
 .menubox{    
-	/* position: relative; */
 	display: flex;
 	max-width: 1200px;
 	opacity: inherit;
-}
-
-@media screen and (max-width: 767px){
-	.menu{
-		/* background-image: url(../img/background-rwd-navbar.png); */
-		/* background-size: contain; */
-	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -170,7 +159,6 @@ button:hover{
 }
 
 .menu_area{
-  /* position: relative; */
 	padding-top: 35px;
 	right:20px;
 }
@@ -237,50 +225,11 @@ button:hover{
 	.sub_nav{
 		display: none;
 	}
-
-/* .sub_nav{
-	width: 100%;
-	height: 80px;	
-	position: absolute;
-	left: 0;
-	top: 100px;
-	backdrop-filter: blur(5px);
-	background-color: rgba(255,255,255,0.8);	
-	display: none;
-	justify-content:right;
 }
-
-.sub_nav ul{
-	max-width: 1200px;
-	text-align: right;
-	margin: 0 auto;
-}
-
-.sub_nav_li:hover .sub_nav_a{
-	color: #A0BD90;	
-} 
-
-.sub_nav_li{
-	display: inline-block;
-	padding: 0 30px;
-}
-
-.sub_nav_a{
-  display: inline-block;
-	line-height: 80px;
-  padding: 5px 0;
-}
-*/
-}
-
-
-
-
 
 /* ------------- hover & show ------------- */
 
 /* menu hover */
-
 @media screen and (min-width: 576px) {
 	.menu_tex:hover{
 		background-image: url(../img/hover_leaf.png);
