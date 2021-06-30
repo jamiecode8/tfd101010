@@ -215,11 +215,11 @@ li.vol:hover .price_inner{
 /* 植物照片區塊 */
 
 .organic_area{
-    position: absolute;
     display: flex;
     max-width: 1200px; 
     width: 100%;
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 .organic{
@@ -259,6 +259,13 @@ li.vol:hover .price_inner{
     .mid_visual{
         display: none;
     }
+}
+
+.mid_visual_rose{
+    background-image: url(../img/rose.png);
+    background-position: center;
+    background-size: cover;
+    height: 395px;
 }
 
 /* 建議搭配區塊 */
