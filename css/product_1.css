@@ -44,7 +44,7 @@
 }
 
 .sc{
-    background-image: url(../img/sc0.png);
+    background-image: url(../img/scent0.png);
        flex-grow: 1;
        flex: 1 0 ; 
 }
@@ -135,17 +135,5 @@ a{
     .swiper-button-next, .swiper-button-prev{
     color: rgba(254, 248, 239, 0.5);
     text-shadow:0.5px 0.5px 5px #FEF8EF;
-    }
-    
-    .es{
-    background-image: url(../img/ess0.png);
-    }
-    
-    .bs{
-    background-image: url(../img/bs0.png);
-    }
-    
-    .sc{
-    background-image: url(../img/sc0.png);
     }
 }
