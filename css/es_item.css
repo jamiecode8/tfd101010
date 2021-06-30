@@ -261,11 +261,18 @@ li.vol:hover .price_inner{
     }
 }
 
-.mid_visual_rose{
-    background-image: url(../img/rose.png);
+.mid_visual{
     background-position: center;
     background-size: cover;
     height: 395px;
+}
+
+.mid_visual_rose{
+    background-image: url(../img/rose.png);
+}
+
+.mid_visual_yilan{
+    background-image: url(../img/ylan_b.png);
 }
 
 /* 建議搭配區塊 */
