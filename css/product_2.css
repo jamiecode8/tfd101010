@@ -109,6 +109,10 @@
 @media screen and (max-width: 575px){
 	.quote p{
 		padding: 60px 30px;
+		text-align: left;
+	}
+	.br{
+		display: none;
 	}
 }
 
