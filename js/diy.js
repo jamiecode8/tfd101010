@@ -29,31 +29,24 @@ for (let index = 0; index < block.length; index++) {
 
 // 中間區域tab選單
 function opennumber(name, element){
-  // Hide all elements with class="tabcontent" by default */
-  var i, inner_block, baselinks;
+  var i, inner_block;
+  // 找到同樣class的物件，全部隱藏
   inner_block = document.getElementsByClassName("inner_block_area");
   for (i = 0; i < inner_block.length; i++) {
     inner_block[i].style.display = "none";
   }
-
-  // Show the specific tab content
+  // 找到指定物件，顯是那個
   document.getElementById(name).style.display = "block";
 }
 
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-
 
 // 選單下方的底線
 var items = document.getElementsByClassName("menuitem");
 // console.log(items);
-
 for(let i = 0; i < items.length; i++){
   items[i].addEventListener("click",function(){
     let links = this.closest("ul.menubar").querySelectorAll("li.menuitem");
-    // console.log(links);
-    
-    //移除a連結上的-on class 
     links.forEach(function(item, i){
       //console.log(item);
       item.classList.remove("underline");
